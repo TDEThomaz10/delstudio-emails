@@ -33,6 +33,45 @@ gh repo edit TDEThomaz10/delstudio-emails --visibility private --accept-visibili
 Note that doing so also takes the asset host offline, which breaks image loading in
 any email already sent.
 
+## Review workflow — Don saves, you download
+
+The preview is backed by a shared store, so edits are no longer trapped in one
+browser. Both sides use the **same link**.
+
+**Don's side**
+1. Opens the link, picks an email.
+2. **Edit text** to rewrite copy · **Images** to swap photography · **Sections** to add,
+   move or delete blocks.
+3. **Save version** → his name, a one-line label, a verdict
+   (*I like this one* / *Needs changes* / *Just saving*) and any notes.
+
+**Your side**
+1. Open the same link → **Versions** tab (the badge shows how many exist).
+2. Every version anyone saved, newest first, with author, verdict, label and notes.
+3. **Open** loads it into the preview so you can read it in context.
+   **Download** gives you the HTML — with absolute asset URLs already baked in, so it
+   is ready to paste into your ESP.
+
+Nothing is ever overwritten or deleted — each save is a new row, so you keep the whole
+history and can always go back.
+
+**Also:** in-progress edits autosave to Don's browser every second or so. If he closes
+the tab before saving a version, his work is still there when he returns. **Revert**
+discards it.
+
+### Where the data lives
+Supabase table `delstudio_email_versions` on the `TDEDatabase` project. The page ships
+only the **publishable** key, and row-level security permits `SELECT` and `INSERT` only
+— no `UPDATE`, no `DELETE`. Nobody can alter or destroy a saved version from the
+browser. Anyone with the preview URL can read and add versions, which is the intended
+trade for a link Don can open without an account.
+
+To pull everything down at once:
+```sql
+select email_file, author, status, label, note, created_at
+from delstudio_email_versions order by created_at desc;
+```
+
 ### Redeploying
 
 ```bash
