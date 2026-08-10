@@ -6,7 +6,53 @@ Donald E. Lipscomb, Jr., AIA.
 
 ---
 
-## Run the preview
+## Live
+
+**Preview / client demo — [tdethomaz10.github.io/delstudio-emails](https://tdethomaz10.github.io/delstudio-emails/)**
+
+Send Don that link. It opens the full preview tool: all twelve emails, the image
+picker, the section builder, Present mode. Nothing to install.
+
+| | |
+|---|---|
+| Repo | [github.com/TDEThomaz10/delstudio-emails](https://github.com/TDEThomaz10/delstudio-emails) |
+| Asset host | `https://tdethomaz10.github.io/delstudio-emails/assets/…` |
+| Hosted guide PDF | [`/assets/docs/renovation-process-guide.pdf`](https://tdethomaz10.github.io/delstudio-emails/assets/docs/renovation-process-guide.pdf) — use this for `{{GUIDE_URL}}` |
+
+### ⚠️ It is public
+
+GitHub Pages on a free account cannot be access-restricted. `robots.txt` and a
+`noindex` meta keep it out of search engines, and the raw client folders are
+gitignored — but **anyone with the URL can view the images.** Don't post the link
+anywhere public, and take the repo private (or delete it) once the demo is done:
+
+```bash
+gh repo edit TDEThomaz10/delstudio-emails --visibility private --accept-visibility-change-consequences
+```
+
+Note that doing so also takes the asset host offline, which breaks image loading in
+any email already sent.
+
+### Redeploying
+
+```bash
+git add -A && git commit -m "…" && git push      # live in ~60s
+```
+
+### emails/ vs emails-production/
+
+`emails/` uses relative paths (`../assets/…`) so the local preview works.
+`emails-production/` is the same twelve emails with absolute HTTPS URLs baked in —
+**that is the folder you paste into your ESP.** Regenerate after any edit:
+
+```bash
+python3 build-production.py                       # uses the GitHub Pages URL
+python3 build-production.py https://your-cdn.com  # or point at your own host
+```
+
+---
+
+## Run the preview locally
 
 ```bash
 cd "/Users/tdethomaz/Desktop/html emails"
