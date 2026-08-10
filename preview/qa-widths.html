@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>QA — viewport fit &amp; asset check</title>
+<style>
+  body{margin:0;padding:28px;background:#0A0A0A;color:#C9C4BF;
+       font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;}
+  h1{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D12229;margin:0 0 4px;}
+  p.sub{margin:0 0 22px;color:#8A8480;font-size:12px;}
+  a.back{color:#8A8480;font-size:11px;}
+  table{border-collapse:collapse;width:100%;max-width:900px;margin-bottom:30px;}
+  th{text-align:left;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+     color:#8A8480;border-bottom:1px solid #302E2B;padding:8px 10px;font-weight:600;}
+  td{padding:7px 10px;border-bottom:1px solid #1C1B19;font-size:12px;}
+  .ok{color:#7FBF7F;} .bad{color:#E8817F;} .dim{color:#8A8480;}
+  .run{background:#D12229;color:#fff;border:0;padding:9px 20px;border-radius:4px;
+       font:inherit;font-size:12px;cursor:pointer;letter-spacing:.06em;margin-bottom:24px;}
+</style>
+</head>
+<body>
+<h1>QA — viewport fit &amp; asset check</h1>
+<p class="sub">Renders every email at three widths and flags horizontal overflow, broken images, and missing alt text. &nbsp;<a class="back" href="./">&larr; back to preview</a></p>
+<button class="run" id="run">Run checks</button>
+<div id="out"><p class="dim">Not run yet.</p></div>
+
+<script>
+const FILES=["01-two-questions","02-the-process-guide","03-the-cottage","04-the-invitation",
+             "05-renovate-or-move","06-what-it-costs","07-what-your-lot-allows","08-forty-years",
+             "09-why-winter","10-should-i-stop","11-the-estate","12-inside"];
+const WIDTHS=[375,480,620,700];
+
+async function load(file,w){
+  const html=await (await fetch("../emails/"+file+".html")).text();
+  const f=document.createElement("iframe");
+  f.style.cssText=`width:${w}px;height:600px;border:0;position:absolute;left:-99999px;top:0;`;
+  document.body.appendChild(f);
+  await new Promise(r=>{f.onload=r;f.srcdoc=html.replace(/<head>/i,
+    '<head><base href="'+new URL("../emails/",location.href).href+'">');});
+  await new Promise(r=>setTimeout(r,260));
+  return f;
+}
+
+document.getElementById("run").onclick=async()=>{
+  const out=document.getElementById("out");
+  out.innerHTML='<p class="dim">Running…</p>';
+
+  // 1. viewport fit
+  let rows="";
+  for(const w of WIDTHS){
+    for(const file of FILES){
+      const f=await load(file,w);
+      const d=f.contentDocument;
+      const sw=d.documentElement.scrollWidth;
+      let worst="—";
+      if(sw>w+1){
+        let wm=0,el=null;
+        d.querySelectorAll("*").forEach(n=>{const r=n.getBoundingClientRect();
+          if(r.right>w+1&&r.width>wm){wm=r.width;el=n;}});
+        if(el) worst=el.tagName+(el.className?"."+String(el.className).trim():"")+" @"+Math.round(wm)+"px";
+      }
+      rows+=`<tr><td class="dim">${w}px</td><td>${file}</td><td>${sw}px</td>
+             <td class="${sw<=w+1?"ok":"bad"}">${sw<=w+1?"FITS":"OVERFLOW"}</td>
+             <td class="dim">${worst}</td></tr>`;
+      f.remove();
+    }
+  }
+
+  // 2. images + alt text at full width
+  let irows="";
+  for(const file of FILES){
+    const f=await load(file,700);
+    const imgs=[...f.contentDocument.querySelectorAll("img")];
+    await Promise.all(imgs.map(i=>i.complete?0:new Promise(r=>{i.onload=i.onerror=r;})));
+    imgs.forEach(i=>{
+      const src=i.getAttribute("src")||"";
+      const okImg=i.naturalWidth>0, okAlt=(i.getAttribute("alt")||"").trim().length>0;
+      irows+=`<tr><td>${file}</td><td class="dim">${src.split("/").slice(-2).join("/")}</td>
+              <td>${i.naturalWidth}&times;${i.naturalHeight}</td>
+              <td class="${okImg?"ok":"bad"}">${okImg?"LOADS":"BROKEN"}</td>
+              <td class="${okAlt?"ok":"bad"}">${okAlt?"has alt":"NO ALT"}</td></tr>`;
+    });
+    f.remove();
+  }
+
+  out.innerHTML=
+    `<table><thead><tr><th>Width</th><th>Email</th><th>scrollWidth</th><th>Result</th><th>Widest offender</th></tr></thead><tbody>${rows}</tbody></table>`+
+    `<table><thead><tr><th>Email</th><th>Asset</th><th>Natural size</th><th>Load</th><th>Alt text</th></tr></thead><tbody>${irows}</tbody></table>`;
+};
+</script>
+</body>
+</html>

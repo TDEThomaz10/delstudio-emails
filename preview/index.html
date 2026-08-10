@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DEL Studio Architects — Email Programme</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+  :root{
+    --red:#D12229; --red-dim:#8E1A1F;
+    --bg:#0B0B0C; --panel:#131315; --panel-2:#1A1A1D; --panel-3:#212125;
+    --line:#2A2A2E; --line-2:#37373C;
+    --ink:#F2F0EE; --dim:#A9A5A1; --muted:#75716D;
+    --canvas:#E8E4DE;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --serif:Georgia,"Times New Roman",serif;
+    --ease:cubic-bezier(.4,0,.2,1);
+  }
+  html,body{height:100%;}
+  body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--dim);
+       -webkit-font-smoothing:antialiased;overflow:hidden;font-size:13px;}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;}
+  ::-webkit-scrollbar{width:10px;height:10px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  ::-webkit-scrollbar-thumb{background:#2E2E33;border-radius:6px;border:3px solid var(--bg);}
+  ::-webkit-scrollbar-thumb:hover{background:#3C3C42;}
+
+  .app{display:grid;grid-template-columns:250px 1fr 0px;height:100vh;
+       transition:grid-template-columns .32s var(--ease);}
+  .app.has-picker{grid-template-columns:250px 1fr 336px;}
+  .app.present{grid-template-columns:0px 1fr 0px;}
+
+  /* ─────────────── RAIL ─────────────── */
+  .rail{background:var(--panel);border-right:1px solid var(--line);
+        display:flex;flex-direction:column;overflow:hidden;min-width:0;}
+  .brandbar{padding:20px 18px 16px;border-bottom:1px solid var(--line);}
+  .logo{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .tri{width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;
+       border-bottom:16px solid var(--red);flex:none;}
+  .logo h1{margin:0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+           color:var(--ink);font-weight:600;}
+  .brandbar p{margin:0;font-size:11px;line-height:16px;color:var(--muted);}
+  .brandbar .tag{font-family:var(--serif);font-style:italic;font-size:12px;color:var(--dim);
+                 margin-top:7px;display:block;}
+
+  .list{flex:1;overflow-y:auto;padding:8px 8px 20px;min-width:0;}
+  .grouphead{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+             padding:14px 10px 8px;font-weight:600;line-height:14px;}
+  .grouphead.b{color:var(--red);margin-top:8px;border-top:1px solid var(--line);padding-top:16px;}
+  .row{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;
+       padding:9px 10px;border-radius:7px;border:1px solid transparent;margin-bottom:1px;
+       transition:background .14s var(--ease);}
+  .row:hover{background:var(--panel-2);}
+  .row.on{background:var(--panel-2);border-color:var(--line-2);}
+  .row.on .n{background:var(--red);color:#fff;border-color:var(--red);}
+  .n{width:20px;height:20px;flex:none;border:1px solid var(--line-2);border-radius:4px;
+     display:grid;place-items:center;font-family:var(--mono);font-size:9px;color:var(--muted);
+     margin-top:1px;}
+  .row .si{display:block;min-width:0;flex:1;}
+  .row .t{display:block;font-size:12.5px;color:var(--ink);font-weight:500;line-height:17px;}
+  .row .d{display:block;font-family:var(--mono);font-size:9px;color:var(--red);
+          letter-spacing:.06em;margin-top:3px;}
+  .railfoot{border-top:1px solid var(--line);padding:12px 18px;font-size:10px;line-height:17px;
+            color:var(--muted);}
+  .railfoot a{color:var(--dim);text-decoration:none;} .railfoot a:hover{color:var(--ink);}
+  kbd{font-family:var(--mono);background:var(--panel-3);border:1px solid var(--line-2);
+      border-radius:3px;padding:1px 4px;font-size:9px;color:var(--dim);}
+
+  /* ─────────────── MAIN ─────────────── */
+  .main{display:flex;flex-direction:column;overflow:hidden;min-width:0;position:relative;}
+  .bar{display:flex;align-items:center;gap:6px;padding:9px 14px;flex:none;
+       border-bottom:1px solid var(--line);background:var(--panel);flex-wrap:wrap;}
+  .seg{display:flex;background:var(--panel-3);border-radius:7px;padding:2px;gap:2px;}
+  .seg button{font-size:11px;padding:5px 11px;border-radius:5px;color:var(--muted);
+              transition:all .14s var(--ease);white-space:nowrap;}
+  .seg button:hover{color:var(--ink);}
+  .seg button.on{background:var(--red);color:#fff;}
+  .tgl{font-size:11px;padding:6px 12px;border-radius:7px;border:1px solid var(--line-2);
+       color:var(--muted);transition:all .14s var(--ease);white-space:nowrap;}
+  .tgl:hover{border-color:#4A4A50;color:var(--ink);}
+  .tgl.on{background:var(--red);border-color:var(--red);color:#fff;}
+  .grow{flex:1;}
+  .stat{font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap;}
+
+  .stage{flex:1;overflow:auto;padding:26px 24px 80px;
+         background:radial-gradient(1100px 620px at 50% -10%,#17171A 0%,var(--bg) 62%);}
+  .col{margin:0 auto;display:flex;flex-direction:column;align-items:center;}
+
+  .inbox{width:100%;background:var(--panel);border:1px solid var(--line);
+         border-radius:12px 12px 0 0;padding:15px 18px;}
+  .inbox .who{display:flex;align-items:center;gap:9px;margin-bottom:7px;}
+  .av{width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;flex:none;
+      display:grid;place-items:center;font-size:10px;font-weight:700;letter-spacing:.04em;}
+  .inbox .who b{color:var(--ink);font-size:12px;font-weight:600;}
+  .inbox .who span{font-family:var(--mono);font-size:10px;color:var(--muted);}
+  .inbox .sj{color:var(--ink);font-size:17px;font-weight:600;line-height:24px;}
+  .inbox .ph{font-size:13px;line-height:20px;color:var(--dim);}
+  .field{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);}
+  .field:first-of-type{border-top:0;padding-top:0;}
+  .flab{display:block;font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+        color:var(--muted);margin-bottom:5px;font-weight:600;}
+
+  .frameWrap{background:var(--canvas);border:1px solid var(--line);border-top:0;
+             border-radius:0 0 12px 12px;overflow:hidden;
+             box-shadow:0 30px 70px -22px rgba(0,0,0,.75);}
+  .zoom{overflow:hidden;}
+  iframe{display:block;border:0;background:var(--canvas);transform-origin:0 0;}
+
+  .notes{width:100%;margin-top:20px;background:var(--panel);border:1px solid var(--line);
+         border-radius:12px;padding:20px 22px;}
+  .notes h3{margin:0 0 14px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+            color:var(--red);font-weight:600;}
+  .notes dl{margin:0;display:grid;grid-template-columns:104px 1fr;gap:9px 16px;}
+  .notes dt{font-family:var(--mono);font-size:9px;color:var(--muted);text-transform:uppercase;
+            letter-spacing:.08em;padding-top:3px;}
+  .notes dd{margin:0;font-size:12px;line-height:19px;color:var(--dim);}
+
+  /* ─────────────── PICKER ─────────────── */
+  .picker{background:var(--panel);border-left:1px solid var(--line);
+          display:flex;flex-direction:column;overflow:hidden;min-width:0;}
+  .ph-head{padding:14px 16px;border-bottom:1px solid var(--line);flex:none;}
+  .ph-head .r1{display:flex;align-items:center;justify-content:space-between;margin-bottom:3px;}
+  .ph-head h2{margin:0;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+              color:var(--ink);font-weight:600;}
+  .ph-head p{margin:0;font-size:11px;line-height:16px;color:var(--muted);}
+  .x{width:22px;height:22px;border-radius:5px;display:grid;place-items:center;
+     color:var(--muted);font-size:15px;line-height:1;}
+  .x:hover{background:var(--panel-3);color:var(--ink);}
+
+  .pane{flex:1;display:flex;flex-direction:column;overflow:hidden;min-height:0;}
+  .tabs{display:flex;background:var(--panel-3);border-radius:7px;padding:2px;gap:2px;}
+  .tabs button{font-size:11px;padding:5px 13px;border-radius:5px;color:var(--muted);}
+  .tabs button.on{background:var(--ink);color:var(--bg);font-weight:600;}
+  .secacts{display:flex;gap:4px;padding:8px 10px 0;}
+  .secacts button{flex:1;font-size:10.5px;padding:6px 0;border-radius:6px;
+                  border:1px solid var(--line-2);color:var(--muted);}
+  .secacts button:hover{color:var(--ink);border-color:#4A4A50;}
+  .secacts button.danger:hover{color:#fff;background:var(--red);border-color:var(--red);}
+  .slots{flex:none;max-height:34%;overflow-y:auto;padding:10px;
+         border-bottom:1px solid var(--line);}
+  .slot{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:7px;
+        border-radius:8px;border:1px solid transparent;margin-bottom:2px;
+        transition:background .14s var(--ease);}
+  .slot:hover{background:var(--panel-2);}
+  .slot.on{background:var(--panel-2);border-color:var(--red);}
+  .slot img{width:46px;height:34px;object-fit:cover;border-radius:4px;flex:none;
+            background:var(--panel-3);}
+  .slot .si{display:block;min-width:0;flex:1;overflow:hidden;}
+  .slot .sn{display:block;font-size:11px;color:var(--ink);font-weight:500;
+            white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .slot .sm{display:block;font-family:var(--mono);font-size:9px;color:var(--muted);
+            margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+  .libwrap{flex:1;overflow-y:auto;padding:12px 10px 26px;}
+  .filters{display:flex;gap:5px;flex-wrap:wrap;padding:0 2px 12px;}
+  .fchip{font-size:10px;padding:4px 9px;border-radius:20px;border:1px solid var(--line-2);
+         color:var(--muted);transition:all .14s var(--ease);}
+  .fchip:hover{color:var(--ink);border-color:#4A4A50;}
+  .fchip.on{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+  .libgroup{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+            padding:12px 4px 8px;font-weight:600;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .thumb{position:relative;border-radius:8px;overflow:hidden;border:2px solid transparent;
+         background:var(--panel-3);transition:border-color .14s var(--ease);display:block;}
+  .thumb:hover{border-color:var(--line-2);}
+  .thumb.cur{border-color:var(--red);}
+  .thumb img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;}
+  .thumb .cap{padding:5px 7px 6px;}
+  .thumb .cn{font-size:10px;color:var(--ink);line-height:13px;white-space:nowrap;
+             overflow:hidden;text-overflow:ellipsis;}
+  .thumb .cm{font-family:var(--mono);font-size:8.5px;color:var(--muted);margin-top:2px;}
+  .empty{padding:26px 10px;text-align:center;font-size:11px;color:var(--muted);line-height:18px;}
+
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(90px);
+         background:var(--ink);color:var(--bg);font-size:12px;font-weight:500;
+         padding:10px 20px;border-radius:8px;transition:transform .24s var(--ease);
+         pointer-events:none;z-index:99;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+  .toast.up{transform:translateX(-50%) translateY(0);}
+
+  .app.present .bar{opacity:0;pointer-events:none;height:0;padding:0;border:0;overflow:hidden;}
+  .app.present .inbox,.app.present .notes{display:none;}
+  .app.present .frameWrap{border-radius:12px;border-top:1px solid var(--line);}
+  .app.present .stage{padding-top:34px;}
+  .exit{position:fixed;top:18px;right:18px;z-index:120;font-size:12px;font-weight:600;
+        padding:10px 18px;border-radius:9px;background:var(--red);border:0;color:#fff;
+        display:none;align-items:center;gap:8px;box-shadow:0 8px 26px rgba(0,0,0,.5);}
+  .exit:hover{background:#B81D23;}
+  .exit kbd{background:rgba(255,255,255,.2);border-color:transparent;color:#fff;}
+  body.presenting .exit{display:flex;}
+  .exit:hover{color:var(--ink);}
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- ─────────── RAIL ─────────── -->
+  <aside class="rail">
+    <div class="brandbar">
+      <div class="logo"><span class="tri"></span><h1>Del Studio Architects</h1></div>
+      <p>Email programme &middot; 11 emails</p>
+      <span class="tag">Designed once. Lived in forever.</span>
+    </div>
+    <nav class="list" id="list"></nav>
+    <div class="railfoot">
+      <kbd>1</kbd>&ndash;<kbd>0</kbd> switch &middot; <kbd>&larr;</kbd><kbd>&rarr;</kbd> step &middot; <kbd>P</kbd> present<br />
+      <a href="./qa-widths.html">Run width &amp; asset QA &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ─────────── MAIN ─────────── -->
+  <div class="main">
+    <div class="bar">
+      <div class="seg" id="vp">
+        <button data-w="700" class="on">Desktop</button>
+        <button data-w="480">Tablet</button>
+        <button data-w="375">Mobile</button>
+      </div>
+      <div class="seg" id="zm">
+        <button data-z="fit">Fit</button>
+        <button data-z="0.5">50%</button>
+        <button data-z="0.75">75%</button>
+        <button data-z="1" class="on">100%</button>
+      </div>
+      <button class="tgl on" id="mergeBtn">Merge filled</button>
+      <button class="tgl" id="isoBtn" title="Show only the selected image, hide the rest">Isolate image</button>
+      <button class="tgl" id="editBtn" title="Click any text in the email and type">Edit text</button>
+      <button class="tgl" id="revertBtn" title="Discard text edits for this email">Revert</button>
+      <div class="grow"></div>
+      <span class="stat" id="stat"></span>
+      <button class="tgl" id="pickBtn">Images</button>
+      <button class="tgl" id="presentBtn">Present</button>
+      <button class="tgl" id="expBtn">Export</button>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="col" id="col">
+        <div class="inbox">
+          <div class="who"><span class="av">DL</span><b id="fromName"></b><span id="fromAddr"></span></div>
+          <div class="field"><span class="flab">Subject line</span><div class="sj" id="subj"></div></div>
+          <div class="field"><span class="flab">Preview text &mdash; what shows under the subject in the inbox</span>
+            <div class="ph" id="pre"></div></div>
+        </div>
+        <div class="frameWrap" id="frameWrap">
+          <div class="zoom" id="zoomwrap"><iframe id="fr" title="Email preview" scrolling="no"></iframe></div>
+        </div>
+        <div class="notes">
+          <h3>Build notes</h3>
+          <dl>
+            <dt>Objective</dt><dd id="nObj"></dd>
+            <dt>Timing</dt><dd id="nDay"></dd>
+            <dt>Primary CTA</dt><dd id="nCta"></dd>
+            <dt>Hook</dt><dd id="nHook"></dd>
+            <dt>Subject A/B</dt><dd id="nAlt"></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────── PICKER ─────────── -->
+  <aside class="picker" id="picker">
+    <div class="ph-head">
+      <div class="r1">
+        <div class="tabs" id="tabs">
+          <button data-tab="images" class="on">Images</button>
+          <button data-tab="sections">Sections</button>
+        </div>
+        <button class="x" id="closePick">&times;</button>
+      </div>
+      <p id="pickHint">Pick a slot, then choose a replacement below.</p>
+    </div>
+
+    <div class="pane" id="paneImages">
+      <div class="slots" id="slots"></div>
+      <div class="libwrap"><div class="filters" id="filters"></div><div id="lib"></div></div>
+    </div>
+
+    <div class="pane" id="paneSections" style="display:none;">
+      <div class="slots" id="secList"></div>
+      <div class="libwrap"><div class="filters" id="secFilters"></div><div id="secLib"></div></div>
+    </div>
+  </aside>
+</div>
+
+<button class="exit" id="exitPresent">&larr; Exit present mode <kbd>Esc</kbd></button>
+<div class="toast" id="toast"></div>
+
+<script src="./blocks.js"></script>
+<script>
+const EMAILS = [
+ {f:"01-two-questions.html", n:"Two Questions", d:"Opens the sequence", track:"A",
+  s:"Two questions about your home",
+  p:"No pitch, no brochure. Just the two questions I ask before anyone talks about square footage.",
+  o:"Restart the conversation. Kills “we haven’t had the family conversation yet.”",
+  c:"Reply — no buttons, by design.",
+  h:"Uses the client’s own discovery doc verbatim. A question, not a pitch.",
+  a:["A question I ask every client","{{FirstName}}, two questions before we start"]},
+
+ {f:"02-the-process-guide.html", n:"The Process Guide", d:"Second", track:"A",
+  s:"Step one isn’t calling a contractor",
+  p:"A one-page map of the whole renovation, start to keys. Notice which step the contractor shows up in.",
+  o:"Remove overwhelm. Kills “I don’t even know where to start.”",
+  c:"Download the guide",
+  h:"The contractor doesn’t appear until Step 3 — and almost everyone starts there.",
+  a:["Where a renovation actually begins","The 3 steps most homeowners skip"]},
+
+ {f:"03-the-cottage.html", n:"The Cottage", d:"Third in the sequence", track:"A",
+  s:"The smallest building took the most drawings",
+  p:"Two bedrooms. A pergola. And more drawings than the building it sits behind.",
+  o:"Proof and trust, at a size the reader can picture for themselves.",
+  c:"See the portfolio",
+  h:"“Small projects are not simpler. They are less forgiving.” Uses the cottage, not the estate, so a modest reader doesn’t conclude “too expensive for me.”",
+  a:["Small projects are less forgiving, not simpler","Look at the floor"]},
+
+ {f:"04-the-invitation.html", n:"The Invitation", d:"Closes the sequence", track:"A",
+  s:"What the first conversation actually costs",
+  p:"Complimentary, no drawings, no obligation. Here is exactly what the first meeting is.",
+  o:"Close the loop. Kills “I’m afraid of what it costs to even ask.”",
+  c:"Book a complimentary consultation",
+  h:"“Nobody has ever been charged for the first conversation.” Plus a real exit ramp.",
+  a:["Should I close your file?","Nobody’s ever been charged for the first conversation"]},
+
+ {f:"05-renovate-or-move.html", n:"Renovate or Move?", d:"Nurture · first", track:"B",
+  s:"Renovate, or move?",
+  p:"Most people frame it as a money question. It is really about the bones and the lot.",
+  o:"Re-enter on the question they’re actually arguing about at home.",
+  c:"Reply with which way they’re leaning",
+  h:"Moving costs ~8–10% of the home’s value and buys zero new space.",
+  a:["The renovate-or-move question, honestly","Can this house become what you want?"]},
+
+ {f:"06-what-it-costs.html", n:"What It Costs", d:"Nurture · second", track:"B",
+  s:"Nobody wants to ask this one first",
+  p:"Published Maryland ranges, what moves the number, and how architects actually charge.",
+  o:"Answer the question every lead has and almost none will ask.",
+  c:"Book a consultation",
+  h:"Publishing real numbers is the strongest trust signal a design firm has.",
+  a:["What an addition actually costs here","The number nobody will give you"]},
+
+ {f:"07-what-your-lot-allows.html", n:"What Your Lot Allows", d:"Nurture · third", track:"B",
+  s:"The rule that stops more additions than money does",
+  p:"Setbacks and lot coverage decide the shape of an addition before a designer draws anything.",
+  o:"Make Step 1 concrete, and open a genuinely useful free lot review.",
+  c:"Reply with your address for a free zoning check",
+  h:"“Send me your address and I’ll tell you what your lot allows.” Highest-value offer in the set.",
+  a:["What will your lot actually allow?","Send me your address"]},
+
+ {f:"08-forty-years.html", n:"Forty Years", d:"Nurture · fourth", track:"B",
+  s:"A rancher, a restaurant and a floating pavilion",
+  p:"Designed once. Lived in forever. Four decades of building types, one method.",
+  o:"Credibility through range rather than repetition.",
+  c:"See the portfolio",
+  h:"A house is the hardest building type, not the easiest.",
+  a:["Forty years of asking the same question","The building type changes. The question doesn’t."]},
+
+ {f:"09-why-winter.html", n:"Why Winter", d:"Nurture · fifth — send Oct–Jan", track:"B",
+  s:"Why the drawings start in winter",
+  p:"Permit review is the step nobody budgets time for, and the one you cannot speed up.",
+  o:"Real urgency from a real constraint, not a fake deadline.",
+  c:"Book a consultation · schedule to land Oct–Jan",
+  h:"Everyone calls in April. April is already late.",
+  a:["Everyone calls in April. April is late.","Build next spring? Start now."]},
+
+ {f:"10-should-i-stop.html", n:"Should I Stop?", d:"Nurture · last", track:"B",
+  s:"Should I stop emailing you?",
+  p:"Three options, and one of them is for me to go away. Any of them is a good answer.",
+  o:"Get a decision either way and clean the list.",
+  c:"Reply 1, 2 or 3 — no buttons",
+  h:"The permission close reliably out-replies every other email in a sequence.",
+  a:["Closing your file unless I hear otherwise","One question, then I’ll leave you alone"]},
+
+ {f:"11-the-estate.html", n:"The Estate", d:"Use anywhere", track:"C",
+  s:"Five buildings. One conversation.",
+  p:"A main house, a guest cottage, a carriage barn and the quarter mile between them.",
+  o:"Aspiration and scale. Nine frames of one waterfront estate.",
+  c:"See the portfolio",
+  h:"“The hardest thing is not any one building. It is the space between them.”",
+  a:["Eleven frames of one waterfront estate","The drawing that took the longest"]},
+
+ {f:"12-inside.html", n:"Inside", d:"Use anywhere", track:"C",
+  s:"Nobody lives on the elevation",
+  p:"The outside is what the neighbours see. Here are the rooms you would actually stand in.",
+  o:"Interiors convert better than elevations — they are what people picture for themselves.",
+  c:"Book a complimentary consultation",
+  h:"“None of these rooms are expensive because they are big.” The decisions cost the same on a kitchen as on an estate.",
+  a:["Seven rooms, one house","The room you walk through and quietly dislike"]}
+];
+
+const SAMPLE = {
+ "{{FirstName}}":"Sarah",
+ "{{BOOKING_URL}}":"https://calendly.com/delstudio/consultation",
+ "{{GUIDE_URL}}":"https://delstudioarchitects.com/renovation-guide.pdf",
+ "{{UnsubscribeURL}}":"#unsubscribe"
+};
+
+const $  = s => document.querySelector(s);
+const app = $("#app"), fr = $("#fr"), frameWrap = $("#frameWrap"),
+      zoomwrap = $("#zoomwrap"), col = $("#col"), stage = $("#stage");
+
+let idx=0, width=700, zoomMode="1", contentH=900, merge=true, iso=false;
+let ro=null, LIB=[], filter="all", slots=[], slotSel=-1, editing=false;
+let tab="images", secs=[], secSel=-1, secFilter="all";
+const raw={}, pristine={}, swaps={};    // swaps[file][slotIndex] = newSrc
+
+/* ── layout ─────────────────────────────────────────── */
+function zoomFactor(){
+  if(zoomMode!=="fit") return parseFloat(zoomMode);
+  const avail = stage.clientHeight - (app.classList.contains("present") ? 90 : 190);
+  return Math.min(1, Math.max(.12, avail/Math.max(contentH,1)));
+}
+function layout(){
+  const z = zoomFactor();
+  fr.style.width = width+"px"; fr.style.height = contentH+"px";
+  fr.style.transform = "scale("+z+")";
+  const w = Math.round(width*z), h = Math.round(contentH*z);
+  zoomwrap.style.width=w+"px"; zoomwrap.style.height=h+"px";
+  frameWrap.style.width=w+"px";
+  col.style.width = Math.max(w, 360)+"px";
+  $("#stat").textContent = `${width}px · ${Math.round(z*100)}% · ${contentH}px`;
+}
+function measure(){
+  const d=fr.contentDocument; if(!d||!d.body) return;
+  const h=Math.ceil(d.body.getBoundingClientRect().height);
+  if(h>60 && h!==contentH){ contentH=h; layout(); }
+}
+function watchDoc(){
+  const d=fr.contentDocument; if(!d||!d.body) return;
+  if(ro) ro.disconnect();
+  ro=new ResizeObserver(measure); ro.observe(d.body);
+  measure();
+  [...d.images].forEach(i=>{ if(!i.complete) i.addEventListener("load",measure,{once:true}); });
+  setTimeout(measure,250); setTimeout(measure,900);
+  buildSlots();
+  buildSections();
+  applyIsolate();
+  if(editing) setEditable(true);
+}
+
+/* ── rail ───────────────────────────────────────────── */
+const LABELS={A:["Re-warm Sequence","Opening set"],
+              B:["Nurture Sequence","Ongoing set"],
+              C:["Showpiece","Project gallery"]};
+function buildRail(){
+  const list=$("#list"); list.innerHTML=""; let cur=null;
+  EMAILS.forEach((e,i)=>{
+    if(e.track!==cur){
+      cur=e.track;
+      const h=document.createElement("div");
+      h.className="grouphead"+(cur!=="A"?" b":"");
+      h.innerHTML=`${LABELS[cur][0]}<br>${LABELS[cur][1]}`;
+      list.appendChild(h);
+    }
+    const b=document.createElement("button");
+    b.className="row"+(i===idx?" on":"");
+    b.innerHTML=`<span class="n">${String(i+1).padStart(2,"0")}</span>
+                 <span class="si"><span class="t">${e.n}</span></span>`;
+    b.onclick=()=>{ if(editing) captureEdits();
+      idx=i; buildRail(); stage.scrollTop=0; slotSel=-1; render(); };
+    list.appendChild(b);
+  });
+}
+
+/* ── image slots + library ──────────────────────────── */
+function buildSlots(){
+  const d=fr.contentDocument; if(!d) return;
+  slots=[...d.images];
+  const box=$("#slots"); box.innerHTML="";
+  slots.forEach((img,i)=>{
+    const b=document.createElement("button");
+    b.className="slot"+(i===slotSel?" on":"");
+    const file=(img.getAttribute("src")||"").split("/").pop();
+    b.innerHTML=`<img src="${img.src}" alt="">
+      <span class="si"><span class="sn">${img.alt||file}</span>
+      <span class="sm">${file} · ${img.naturalWidth}×${img.naturalHeight}</span></span>`;
+    b.onclick=()=>{ slotSel=(slotSel===i?-1:i); buildSlots(); renderLib(); applyIsolate();
+      if(slotSel>=0) img.scrollIntoView({behavior:"smooth",block:"center"}); };
+    box.appendChild(b);
+  });
+  $("#pickHint").textContent = slotSel<0
+    ? `${slots.length} images. Pick one to swap it.`
+    : "Now choose a replacement below.";
+  renderLib();
+}
+
+function renderLib(){
+  const lib=$("#lib"); lib.innerHTML="";
+  if(slotSel<0){ lib.innerHTML='<div class="empty">Select an image above to see replacements.</div>'; return; }
+  const cur=slots[slotSel].getAttribute("src");
+  let groups = LIB.filter(g=>filter==="all"||g.id===filter);
+  let any=false;
+  groups.forEach(g=>{
+    const h=document.createElement("div"); h.className="libgroup";
+    h.textContent=`${g.title} — ${g.sub}`; lib.appendChild(h);
+    const grid=document.createElement("div"); grid.className="grid";
+    g.images.forEach(im=>{
+      any=true;
+      const t=document.createElement("button");
+      t.className="thumb"+(cur.endsWith(im.file)?" cur":"");
+      t.innerHTML=`<img src="${im.src}" loading="lazy" alt="">
+        <span class="cap"><span class="cn">${im.name}</span>
+        <span class="cm">${im.w}×${im.h} · ${im.ratio} · ${im.kb}KB</span></span>`;
+      t.onclick=()=>swap(im);
+      grid.appendChild(t);
+    });
+    lib.appendChild(grid);
+  });
+  if(!any) lib.innerHTML='<div class="empty">Nothing in this group.</div>';
+}
+
+function swap(im){
+  if(slotSel<0) return;
+  const e=EMAILS[idx];
+  (swaps[e.f] = swaps[e.f] || {})[slotSel] = im.src;
+  slots[slotSel].src = im.src.replace(/^\.\.\//, new URL("../",location.href).href);
+  slots[slotSel].removeAttribute("width");
+  toast(`Swapped in “${im.name}”`);
+  setTimeout(()=>{ measure(); buildSlots(); },140);
+}
+
+function applyIsolate(){
+  const d=fr.contentDocument; if(!d) return;
+  slots.forEach((img,i)=>{
+    img.style.transition="opacity .2s";
+    img.style.opacity = (iso && slotSel>=0 && i!==slotSel) ? "0.06" : "1";
+    img.style.outline = (slotSel>=0 && i===slotSel) ? "3px solid #D12229" : "";
+    img.style.outlineOffset = (slotSel>=0 && i===slotSel) ? "2px" : "";
+  });
+}
+
+function buildFilters(){
+  const f=$("#filters"); f.innerHTML="";
+  [{id:"all",title:"All"}, ...LIB].forEach(g=>{
+    const b=document.createElement("button");
+    b.className="fchip"+(filter===g.id?" on":"");
+    b.textContent=g.title;
+    b.onclick=()=>{ filter=g.id; buildFilters(); renderLib(); };
+    f.appendChild(b);
+  });
+}
+
+/* ── sections ───────────────────────────────────────── */
+function container(){
+  const d=fr.contentDocument; return d && d.querySelector("table.container");
+}
+function secRows(){
+  const c=container(); if(!c) return [];
+  return [...c.querySelectorAll(":scope > tbody > tr")];
+}
+function secLabel(tr){
+  const h=tr.querySelector("h1,h2");
+  if(h) return "Headline — "+h.textContent.trim().slice(0,40);
+  const im=tr.querySelectorAll("img"), p=tr.querySelector("p");
+  if(im.length && !p) return im.length>1 ? `Image grid × ${im.length}` : "Image";
+  if(im.length && p)  return `Image + text — ${p.textContent.trim().slice(0,26)}`;
+  if(tr.querySelector("a[href]") && (tr.textContent||"").length<80) return "Button / CTA";
+  const t=(tr.textContent||"").trim().replace(/\s+/g," ");
+  return t ? t.slice(0,46) : "Spacer / rule";
+}
+function buildSections(){
+  secs=secRows();
+  const box=$("#secList"); if(!box) return;
+  box.innerHTML="";
+  const acts=document.createElement("div"); acts.className="secacts";
+  acts.innerHTML=`<button id="secUp">&uarr; Up</button><button id="secDown">&darr; Down</button>
+                  <button id="secDup">Duplicate</button><button class="danger" id="secDel">Delete</button>`;
+  box.appendChild(acts);
+  secs.forEach((tr,i)=>{
+    const b=document.createElement("button");
+    b.className="slot"+(i===secSel?" on":"");
+    const im=tr.querySelector("img");
+    const thumb = im ? `<img src="${im.src}" alt="">`
+      : `<span style="width:46px;height:34px;flex:none;border-radius:4px;background:var(--panel-3);
+           display:grid;place-items:center;font-size:9px;color:var(--muted);">TEXT</span>`;
+    b.innerHTML=`${thumb}<span class="si"><span class="sn">${secLabel(tr)}</span>
+                 <span class="sm">section ${String(i+1).padStart(2,"0")} of ${secs.length}</span></span>`;
+    b.onclick=()=>{ secSel=(secSel===i?-1:i); buildSections(); highlightSection();
+      if(secSel>=0) tr.scrollIntoView({behavior:"smooth",block:"center"}); };
+    box.appendChild(b);
+  });
+  $("#secUp").onclick   = ()=>moveSection(-1);
+  $("#secDown").onclick = ()=>moveSection(1);
+  $("#secDup").onclick  = ()=>dupSection();
+  $("#secDel").onclick  = ()=>delSection();
+  if(tab==="sections") $("#pickHint").textContent = secSel<0
+    ? `${secs.length} sections. Select one, then insert a block below it.`
+    : "Insert a block below — or use the buttons to move, duplicate or delete.";
+  highlightSection();
+}
+function highlightSection(){
+  secs.forEach((tr,i)=>{
+    [...tr.children].forEach(td=>{
+      td.style.outline = (tab==="sections" && i===secSel) ? "2px solid #D12229" : "";
+      td.style.outlineOffset = (tab==="sections" && i===secSel) ? "-2px" : "";
+    });
+  });
+}
+function afterStructureChange(msg){
+  captureEdits(); buildSections(); buildSlots(); measure();
+  if(msg) toast(msg);
+}
+function insertBlock(b){
+  const c=container(); if(!c) return;
+  const tb=c.querySelector(":scope > tbody") || c;
+  const tmp=fr.contentDocument.createElement("tbody");
+  tmp.innerHTML=b.html.trim();
+  const row=tmp.firstElementChild; if(!row) return;
+  const ref = secSel>=0 ? secs[secSel] : null;
+  if(ref && ref.nextSibling) tb.insertBefore(row, ref.nextSibling);
+  else if(ref) tb.appendChild(row);
+  else {
+    const last=secs[secs.length-1];                 // default: above the footer
+    last ? tb.insertBefore(row, last) : tb.appendChild(row);
+  }
+  secSel = secRows().indexOf(row);
+  afterStructureChange(`Inserted “${b.n}”`);
+  row.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function moveSection(dir){
+  if(secSel<0) return toast("Select a section first.");
+  const tr=secs[secSel], t=secSel+dir;
+  if(t<0||t>=secs.length) return;
+  const tb=tr.parentNode;
+  dir<0 ? tb.insertBefore(tr, secs[t]) : tb.insertBefore(secs[t], tr);
+  secSel=t; afterStructureChange("Moved.");
+}
+function dupSection(){
+  if(secSel<0) return toast("Select a section first.");
+  const tr=secs[secSel], cl=tr.cloneNode(true);
+  tr.parentNode.insertBefore(cl, tr.nextSibling);
+  secSel++; afterStructureChange("Duplicated.");
+}
+function delSection(){
+  if(secSel<0) return toast("Select a section first.");
+  secs[secSel].remove(); secSel=-1; afterStructureChange("Deleted.");
+}
+function buildSecFilters(){
+  const groups=[...new Set(BLOCKS.map(b=>b.g))];
+  const f=$("#secFilters"); f.innerHTML="";
+  [{id:"all",t:"All"},...groups.map(g=>({id:g,t:g}))].forEach(g=>{
+    const b=document.createElement("button");
+    b.className="fchip"+(secFilter===g.id?" on":"");
+    b.textContent=g.t;
+    b.onclick=()=>{ secFilter=g.id; buildSecFilters(); renderSecLib(); };
+    f.appendChild(b);
+  });
+}
+function renderSecLib(){
+  const lib=$("#secLib"); lib.innerHTML="";
+  const groups=[...new Set(BLOCKS.map(b=>b.g))].filter(g=>secFilter==="all"||g===secFilter);
+  groups.forEach(g=>{
+    const h=document.createElement("div"); h.className="libgroup"; h.textContent=g;
+    lib.appendChild(h);
+    BLOCKS.filter(b=>b.g===g).forEach(b=>{
+      const t=document.createElement("button");
+      t.className="slot"; t.style.marginBottom="3px";
+      t.innerHTML=`<span style="width:46px;height:34px;flex:none;border-radius:4px;
+          background:var(--panel-3);display:grid;place-items:center;font-size:8.5px;
+          color:var(--red);font-weight:700;">${b.ratio==="—"?"TXT":"IMG"}</span>
+        <span class="si"><span class="sn">${b.n}</span><span class="sm">${b.d}</span></span>`;
+      t.onclick=()=>insertBlock(b);
+      lib.appendChild(t);
+    });
+  });
+}
+$("#tabs").onclick=e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  tab=b.dataset.tab;
+  document.querySelectorAll("#tabs button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on");
+  $("#paneImages").style.display   = tab==="images"   ? "flex" : "none";
+  $("#paneSections").style.display = tab==="sections" ? "flex" : "none";
+  if(tab==="sections"){ buildSections(); }
+  else { secSel=-1; highlightSection(); buildSlots(); }
+};
+
+/* ── toolbar ────────────────────────────────────────── */
+$("#vp").onclick=e=>{const b=e.target.closest("button"); if(!b)return;
+  document.querySelectorAll("#vp button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); width=+b.dataset.w; layout(); setTimeout(measure,120);};
+$("#zm").onclick=e=>{const b=e.target.closest("button"); if(!b)return;
+  document.querySelectorAll("#zm button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); zoomMode=b.dataset.z; layout();};
+$("#mergeBtn").onclick=e=>{merge=!merge; e.target.classList.toggle("on",merge);
+  e.target.textContent=merge?"Merge filled":"Merge raw"; render();};
+$("#isoBtn").onclick=e=>{iso=!iso; e.target.classList.toggle("on",iso);
+  if(iso && !app.classList.contains("has-picker")) togglePicker(true); applyIsolate();};
+$("#editBtn").onclick=e=>{
+  editing=!editing; e.target.classList.toggle("on",editing);
+  setEditable(editing);
+  toast(editing ? "Click any text and type. Edits are kept as you move around."
+                : "Text edits saved for this email.");
+};
+$("#revertBtn").onclick=()=>{
+  const f=EMAILS[idx].f;
+  if(!pristine[f]){ toast("Nothing to revert."); return; }
+  raw[f]=pristine[f]; delete swaps[f];
+  toast("Reverted to the original."); render();
+};
+$("#pickBtn").onclick=()=>togglePicker();
+$("#closePick").onclick=()=>togglePicker(false);
+$("#presentBtn").onclick=()=>setPresent(true);
+$("#exitPresent").onclick=()=>setPresent(false);
+$("#expBtn").onclick=exportHTML;
+
+/* ── inline text editing ────────────────────────────── */
+function setEditable(on){
+  const d=fr.contentDocument; if(!d) return;
+  try{ d.designMode = on ? "on" : "off"; }catch(_){}
+  let st=d.getElementById("__editcss");
+  if(on && !st){
+    st=d.createElement("style"); st.id="__editcss";
+    st.textContent=`p:hover,h1:hover,td:hover>p,span:hover{outline:1px dashed rgba(209,34,41,.45);
+      outline-offset:3px;} ::selection{background:#F7D9DA;}`;
+    d.head.appendChild(st);
+  }else if(!on && st){ st.remove(); }
+  if(!on) captureEdits();
+}
+
+/* Snapshot the live document back into `raw` in canonical form:
+   base tag stripped, absolute asset URLs re-relativised, sample values
+   turned back into merge tokens. */
+function captureEdits(){
+  const d=fr.contentDocument, f=EMAILS[idx].f;
+  if(!d||!d.documentElement||!raw[f]) return;
+  let html="<!DOCTYPE html>\n"+d.documentElement.outerHTML;
+  html=html.replace(/<base[^>]*>/i,"");
+  const st=d.getElementById("__editcss"); if(st) html=html.replace(st.outerHTML,"");
+  const assetsAbs=new URL("../assets/",location.href).href;
+  html=html.split(assetsAbs).join("../assets/");
+  html=html.replace(/\s+contenteditable="[^"]*"/gi,"");
+  for(const [k,v] of Object.entries(SAMPLE)) html=html.split(v).join(k);
+  if(!pristine[f]) pristine[f]=raw[f];
+  raw[f]=html;
+}
+
+function togglePicker(force){
+  const on = force===undefined ? !app.classList.contains("has-picker") : force;
+  app.classList.toggle("has-picker",on);
+  $("#pickBtn").classList.toggle("on",on);
+  setTimeout(layout,340);
+}
+function setPresent(on){
+  app.classList.toggle("present",on);
+  document.body.classList.toggle("presenting",on);
+  if(on) app.classList.remove("has-picker"), $("#pickBtn").classList.remove("on");
+  setTimeout(()=>{layout();measure();},340);
+}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("up");
+  clearTimeout(t._x);t._x=setTimeout(()=>t.classList.remove("up"),1600);}
+
+function exportHTML(){
+  if(editing) captureEdits();
+  const e=EMAILS[idx];
+  let html=raw[e.f];
+  const s=swaps[e.f]||{};
+  // re-apply swaps positionally against the source order of <img> tags
+  let k=-1;
+  html=html.replace(/(<img\b[^>]*?\ssrc=")([^"]*)(")/gi,(m,a,src,c)=>{
+    k++; return s[k] ? a+s[k]+c : m;
+  });
+  const blob=new Blob([html],{type:"text/html"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=e.f; a.click();
+  URL.revokeObjectURL(a.href);
+  toast(`Exported ${e.f}`);
+}
+
+/* ── render ─────────────────────────────────────────── */
+async function render(){
+  const e=EMAILS[idx];
+  $("#fromName").textContent = e.track==="A"&&idx===0 ? "Don Lipscomb" : "Don Lipscomb · DEL Studio";
+  $("#fromAddr").textContent = "<don@delstudioarchitects.com>";
+  $("#subj").textContent=e.s; $("#pre").textContent=e.p;
+  $("#nObj").textContent=e.o; $("#nDay").textContent=e.d;
+  $("#nCta").textContent=e.c; $("#nHook").textContent=e.h;
+  $("#nAlt").innerHTML=e.a.map(x=>`&ldquo;${x}&rdquo;`).join("<br>");
+
+  if(!raw[e.f]) raw[e.f]=await (await fetch("../emails/"+e.f)).text();
+  let html=raw[e.f];
+  if(merge) for(const [k,v] of Object.entries(SAMPLE)) html=html.split(k).join(v);
+  const s=swaps[e.f]||{}; let k=-1;
+  html=html.replace(/(<img\b[^>]*?\ssrc=")([^"]*)(")/gi,(m,a,src,c)=>{
+    k++; return s[k]?a+s[k]+c:m; });
+  html=html.replace(/<head>/i,'<head><base href="'+new URL("../emails/",location.href).href+'">');
+
+  contentH=900; fr.onload=watchDoc; fr.srcdoc=html; layout();
+}
+
+/* ── keys ───────────────────────────────────────────── */
+addEventListener("keydown",ev=>{
+  if(ev.metaKey||ev.ctrlKey||/input|textarea/i.test(ev.target.tagName)) return;
+  if(editing && ev.key!=="Escape") return;
+  const n=EMAILS.length;
+  if(ev.key>="1"&&ev.key<="9"&&+ev.key<=n){ idx=+ev.key-1; buildRail(); slotSel=-1; render(); }
+  if(ev.key==="0"&&n>=10){ idx=9; buildRail(); slotSel=-1; render(); }
+  if(ev.key==="-"&&n>=11){ idx=10; buildRail(); slotSel=-1; render(); }
+  if(ev.key==="="&&n>=12){ idx=11; buildRail(); slotSel=-1; render(); }
+  if(ev.key==="ArrowRight"){ idx=(idx+1)%n; buildRail(); slotSel=-1; render(); }
+  if(ev.key==="ArrowLeft"){ idx=(idx-1+n)%n; buildRail(); slotSel=-1; render(); }
+  if(ev.key.toLowerCase()==="p") setPresent(!app.classList.contains("present"));
+  if(ev.key.toLowerCase()==="i") $("#isoBtn").click();
+  if(ev.key==="Escape") setPresent(false);
+});
+addEventListener("resize",layout);
+
+(async()=>{
+  LIB = await (await fetch("./images.json")).json();
+  buildFilters(); buildSecFilters(); renderSecLib(); buildRail(); render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# ── raw client source folders ────────────────────────────────────────────
+# These hold the ORIGINAL un-cropped files, still carrying the BrightMLS and
+# MRIS watermarks. Everything usable has been processed into assets/ already.
+# Keep them off the public web.
+DEL Studio Architects copy/
+fwdadditionalimagesforadscruikshankresidence/
+fwdcommercialprojects/
+fwdcruikshankresidentialdesign/
+fwdhabeckresidential/
+fwdportfolio/
+fwdportfolio (1)/
+
+# internal working documents
+Two Questions.docx
+Draper-Harris Residence 2020-7-7.pdf
+A Guide to the Home Renovation Process.pdf
+View to patio.webp
+docs/
+
+# junk
+.DS_Store
+**/.DS_Store
+.image-gen-mcp/

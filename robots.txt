@@ -1,0 +1,3 @@
+# This is a private client preview. Do not index.
+User-agent: *
+Disallow: /

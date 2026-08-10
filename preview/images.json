@@ -1,0 +1,1689 @@
+[
+ {
+  "id": "estate",
+  "title": "Cruikshank Estate \u2014 Exteriors",
+  "sub": "Client photography \u00b7 watermark cropped",
+  "images": [
+   {
+    "src": "../assets/estate/aerial-sq.jpg",
+    "name": "Aerial sq",
+    "file": "aerial-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 128,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/aerial-wide.jpg",
+    "name": "Aerial wide",
+    "file": "aerial-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 264,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/aerial.jpg",
+    "name": "Aerial",
+    "file": "aerial.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 338,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn-elevation-sq.jpg",
+    "name": "Barn elevation sq",
+    "file": "barn-elevation-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 122,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn-elevation-wide.jpg",
+    "name": "Barn elevation wide",
+    "file": "barn-elevation-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 265,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn-elevation.jpg",
+    "name": "Barn elevation",
+    "file": "barn-elevation.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 330,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn-sq.jpg",
+    "name": "Barn sq",
+    "file": "barn-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 84,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn-wide.jpg",
+    "name": "Barn wide",
+    "file": "barn-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 170,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/barn.jpg",
+    "name": "Barn",
+    "file": "barn.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 217,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-pool-sq.jpg",
+    "name": "Cottage pool sq",
+    "file": "cottage-pool-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 116,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-pool-wide.jpg",
+    "name": "Cottage pool wide",
+    "file": "cottage-pool-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 254,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-pool.jpg",
+    "name": "Cottage pool",
+    "file": "cottage-pool.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 309,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-sq.jpg",
+    "name": "Cottage sq",
+    "file": "cottage-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 150,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-water-sq.jpg",
+    "name": "Cottage water sq",
+    "file": "cottage-water-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 129,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-water-wide.jpg",
+    "name": "Cottage water wide",
+    "file": "cottage-water-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 272,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-water.jpg",
+    "name": "Cottage water",
+    "file": "cottage-water.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 358,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage-wide.jpg",
+    "name": "Cottage wide",
+    "file": "cottage-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 318,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/cottage.jpg",
+    "name": "Cottage",
+    "file": "cottage.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 410,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/house-and-barn-sq.jpg",
+    "name": "House and barn sq",
+    "file": "house-and-barn-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 108,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/house-and-barn-wide.jpg",
+    "name": "House and barn wide",
+    "file": "house-and-barn-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 239,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/house-and-barn.jpg",
+    "name": "House and barn",
+    "file": "house-and-barn.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 299,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/interior-arch-sq.jpg",
+    "name": "Interior arch sq",
+    "file": "interior-arch-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 37,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/interior-arch.jpg",
+    "name": "Interior arch",
+    "file": "interior-arch.jpg",
+    "w": 600,
+    "h": 800,
+    "ratio": "3:4",
+    "kb": 47,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/main-house-sq.jpg",
+    "name": "Main house sq",
+    "file": "main-house-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 112,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/main-house-wide.jpg",
+    "name": "Main house wide",
+    "file": "main-house-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 260,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/main-house.jpg",
+    "name": "Main house",
+    "file": "main-house.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 331,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/port-cochere-sq.jpg",
+    "name": "Port cochere sq",
+    "file": "port-cochere-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 114,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/port-cochere-wide.jpg",
+    "name": "Port cochere wide",
+    "file": "port-cochere-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 230,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/port-cochere.jpg",
+    "name": "Port cochere",
+    "file": "port-cochere.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 301,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/site-panorama-tall.jpg",
+    "name": "Site panorama tall",
+    "file": "site-panorama-tall.jpg",
+    "w": 1200,
+    "h": 480,
+    "ratio": "5:2",
+    "kb": 128,
+    "group": "estate"
+   },
+   {
+    "src": "../assets/estate/site-panorama.jpg",
+    "name": "Site panorama",
+    "file": "site-panorama.jpg",
+    "w": 1200,
+    "h": 300,
+    "ratio": "4:1",
+    "kb": 88,
+    "group": "estate"
+   }
+  ]
+ },
+ {
+  "id": "interiors",
+  "title": "Cruikshank Estate \u2014 Interiors",
+  "sub": "Kitchen, library, sun room, barn",
+  "images": [
+   {
+    "src": "../assets/interiors/barn-arch-sq.jpg",
+    "name": "Barn arch sq",
+    "file": "barn-arch-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 87,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-arch-wide.jpg",
+    "name": "Barn arch wide",
+    "file": "barn-arch-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 177,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-arch.jpg",
+    "name": "Barn arch",
+    "file": "barn-arch.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 227,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-balcony-sq.jpg",
+    "name": "Barn balcony sq",
+    "file": "barn-balcony-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 91,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-balcony-wide.jpg",
+    "name": "Barn balcony wide",
+    "file": "barn-balcony-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 168,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-balcony.jpg",
+    "name": "Barn balcony",
+    "file": "barn-balcony.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 234,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-interior-sq.jpg",
+    "name": "Barn interior sq",
+    "file": "barn-interior-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 98,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-interior-wide.jpg",
+    "name": "Barn interior wide",
+    "file": "barn-interior-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 176,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/barn-interior.jpg",
+    "name": "Barn interior",
+    "file": "barn-interior.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 238,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/bedroom-sq.jpg",
+    "name": "Bedroom sq",
+    "file": "bedroom-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 77,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/bedroom-wide.jpg",
+    "name": "Bedroom wide",
+    "file": "bedroom-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 167,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/bedroom.jpg",
+    "name": "Bedroom",
+    "file": "bedroom.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 209,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-bedroom-sq.jpg",
+    "name": "Cottage bedroom sq",
+    "file": "cottage-bedroom-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 84,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-bedroom-wide.jpg",
+    "name": "Cottage bedroom wide",
+    "file": "cottage-bedroom-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 166,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-bedroom.jpg",
+    "name": "Cottage bedroom",
+    "file": "cottage-bedroom.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 218,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-interior-sq.jpg",
+    "name": "Cottage interior sq",
+    "file": "cottage-interior-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 76,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-interior-wide.jpg",
+    "name": "Cottage interior wide",
+    "file": "cottage-interior-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 148,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-interior.jpg",
+    "name": "Cottage interior",
+    "file": "cottage-interior.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 198,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-living-sq.jpg",
+    "name": "Cottage living sq",
+    "file": "cottage-living-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 93,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-living-wide.jpg",
+    "name": "Cottage living wide",
+    "file": "cottage-living-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 191,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/cottage-living.jpg",
+    "name": "Cottage living",
+    "file": "cottage-living.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 249,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/dining-room-sq.jpg",
+    "name": "Dining room sq",
+    "file": "dining-room-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 86,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/dining-room-wide.jpg",
+    "name": "Dining room wide",
+    "file": "dining-room-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 151,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/dining-room.jpg",
+    "name": "Dining room",
+    "file": "dining-room.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 205,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/gazebo-sq.jpg",
+    "name": "Gazebo sq",
+    "file": "gazebo-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 92,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/gazebo-wide.jpg",
+    "name": "Gazebo wide",
+    "file": "gazebo-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 160,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/gazebo.jpg",
+    "name": "Gazebo",
+    "file": "gazebo.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 222,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen-arch-sq.jpg",
+    "name": "Kitchen arch sq",
+    "file": "kitchen-arch-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 59,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen-arch-wide.jpg",
+    "name": "Kitchen arch wide",
+    "file": "kitchen-arch-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 99,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen-arch.jpg",
+    "name": "Kitchen arch",
+    "file": "kitchen-arch.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 131,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen-sq.jpg",
+    "name": "Kitchen sq",
+    "file": "kitchen-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 88,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen-wide.jpg",
+    "name": "Kitchen wide",
+    "file": "kitchen-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 153,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/kitchen.jpg",
+    "name": "Kitchen",
+    "file": "kitchen.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 205,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-ceiling-sq.jpg",
+    "name": "Library ceiling sq",
+    "file": "library-ceiling-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 73,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-ceiling-wide.jpg",
+    "name": "Library ceiling wide",
+    "file": "library-ceiling-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 147,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-ceiling.jpg",
+    "name": "Library ceiling",
+    "file": "library-ceiling.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 188,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-sq.jpg",
+    "name": "Library sq",
+    "file": "library-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 105,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-upper-sq.jpg",
+    "name": "Library upper sq",
+    "file": "library-upper-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 105,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-upper-wide.jpg",
+    "name": "Library upper wide",
+    "file": "library-upper-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 204,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-upper.jpg",
+    "name": "Library upper",
+    "file": "library-upper.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 264,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library-wide.jpg",
+    "name": "Library wide",
+    "file": "library-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 190,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/library.jpg",
+    "name": "Library",
+    "file": "library.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 254,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sitting-room-sq.jpg",
+    "name": "Sitting room sq",
+    "file": "sitting-room-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 73,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sitting-room-wide.jpg",
+    "name": "Sitting room wide",
+    "file": "sitting-room-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 151,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sitting-room.jpg",
+    "name": "Sitting room",
+    "file": "sitting-room.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 195,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sun-room-sq.jpg",
+    "name": "Sun room sq",
+    "file": "sun-room-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 97,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sun-room-wide.jpg",
+    "name": "Sun room wide",
+    "file": "sun-room-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 195,
+    "group": "interiors"
+   },
+   {
+    "src": "../assets/interiors/sun-room.jpg",
+    "name": "Sun room",
+    "file": "sun-room.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 252,
+    "group": "interiors"
+   }
+  ]
+ },
+ {
+  "id": "habeck",
+  "title": "Habeck Residence",
+  "sub": "Colonial, Maryland",
+  "images": [
+   {
+    "src": "../assets/habeck/habeck-dining-sq.jpg",
+    "name": "Habeck dining sq",
+    "file": "habeck-dining-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 31,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-dining.jpg",
+    "name": "Habeck dining",
+    "file": "habeck-dining.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 47,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-exterior-sq.jpg",
+    "name": "Habeck exterior sq",
+    "file": "habeck-exterior-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 30,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-exterior.jpg",
+    "name": "Habeck exterior",
+    "file": "habeck-exterior.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 49,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-great-room-sq.jpg",
+    "name": "Habeck great room sq",
+    "file": "habeck-great-room-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 31,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-great-room.jpg",
+    "name": "Habeck great room",
+    "file": "habeck-great-room.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 46,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen-2-sq.jpg",
+    "name": "Habeck kitchen 2 sq",
+    "file": "habeck-kitchen-2-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 30,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen-2.jpg",
+    "name": "Habeck kitchen 2",
+    "file": "habeck-kitchen-2.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 46,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen-3-sq.jpg",
+    "name": "Habeck kitchen 3 sq",
+    "file": "habeck-kitchen-3-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 29,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen-3.jpg",
+    "name": "Habeck kitchen 3",
+    "file": "habeck-kitchen-3.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 46,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen-sq.jpg",
+    "name": "Habeck kitchen sq",
+    "file": "habeck-kitchen-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 29,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-kitchen.jpg",
+    "name": "Habeck kitchen",
+    "file": "habeck-kitchen.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 44,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-porch-sq.jpg",
+    "name": "Habeck porch sq",
+    "file": "habeck-porch-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 32,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-porch.jpg",
+    "name": "Habeck porch",
+    "file": "habeck-porch.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 51,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-stair-hall-sq.jpg",
+    "name": "Habeck stair hall sq",
+    "file": "habeck-stair-hall-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 35,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-stair-hall.jpg",
+    "name": "Habeck stair hall",
+    "file": "habeck-stair-hall.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 49,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-study-sq.jpg",
+    "name": "Habeck study sq",
+    "file": "habeck-study-sq.jpg",
+    "w": 420,
+    "h": 420,
+    "ratio": "1:1",
+    "kb": 32,
+    "group": "habeck"
+   },
+   {
+    "src": "../assets/habeck/habeck-study.jpg",
+    "name": "Habeck study",
+    "file": "habeck-study.jpg",
+    "w": 640,
+    "h": 427,
+    "ratio": "3:2",
+    "kb": 46,
+    "group": "habeck"
+   }
+  ]
+ },
+ {
+  "id": "commercial",
+  "title": "Commercial & Hospitality",
+  "sub": "Dick's, TIAA-CREF, casino, Bobby Van's",
+  "images": [
+   {
+    "src": "../assets/commercial/bobby-vans.jpg",
+    "name": "Bobby vans",
+    "file": "bobby-vans.jpg",
+    "w": 300,
+    "h": 237,
+    "ratio": "1.27:1",
+    "kb": 21,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/casino-2-sq.jpg",
+    "name": "Casino 2 sq",
+    "file": "casino-2-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 63,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/casino-2.jpg",
+    "name": "Casino 2",
+    "file": "casino-2.jpg",
+    "w": 1200,
+    "h": 750,
+    "ratio": "8:5",
+    "kb": 156,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/casino-sq.jpg",
+    "name": "Casino sq",
+    "file": "casino-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 50,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/casino-wide.jpg",
+    "name": "Casino wide",
+    "file": "casino-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 101,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/casino.jpg",
+    "name": "Casino",
+    "file": "casino.jpg",
+    "w": 1200,
+    "h": 750,
+    "ratio": "8:5",
+    "kb": 133,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/dicks-harbor-sq.jpg",
+    "name": "Dicks harbor sq",
+    "file": "dicks-harbor-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 108,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/dicks-harbor-wide.jpg",
+    "name": "Dicks harbor wide",
+    "file": "dicks-harbor-wide.jpg",
+    "w": 1200,
+    "h": 565,
+    "ratio": "2.12:1",
+    "kb": 184,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/dicks-last-resort-sq.jpg",
+    "name": "Dicks last resort sq",
+    "file": "dicks-last-resort-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 91,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/dicks-last-resort.jpg",
+    "name": "Dicks last resort",
+    "file": "dicks-last-resort.jpg",
+    "w": 720,
+    "h": 720,
+    "ratio": "1:1",
+    "kb": 96,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/dicks-wide-wide.jpg",
+    "name": "Dicks wide wide",
+    "file": "dicks-wide-wide.jpg",
+    "w": 1200,
+    "h": 530,
+    "ratio": "2.26:1",
+    "kb": 183,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/tiaa-cref-2.jpg",
+    "name": "Tiaa cref 2",
+    "file": "tiaa-cref-2.jpg",
+    "w": 960,
+    "h": 725,
+    "ratio": "4:3",
+    "kb": 52,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/tiaa-cref-sq.jpg",
+    "name": "Tiaa cref sq",
+    "file": "tiaa-cref-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 35,
+    "group": "commercial"
+   },
+   {
+    "src": "../assets/commercial/tiaa-cref.jpg",
+    "name": "Tiaa cref",
+    "file": "tiaa-cref.jpg",
+    "w": 960,
+    "h": 725,
+    "ratio": "4:3",
+    "kb": 59,
+    "group": "commercial"
+   }
+  ]
+ },
+ {
+  "id": "civic",
+  "title": "Civic, Transit & Multifamily",
+  "sub": "Union Station, VRE, townhouses",
+  "images": [
+   {
+    "src": "../assets/civic/arminger-barn.jpg",
+    "name": "Arminger barn",
+    "file": "arminger-barn.jpg",
+    "w": 600,
+    "h": 470,
+    "ratio": "1.28:1",
+    "kb": 80,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/heritage-harbor.jpg",
+    "name": "Heritage harbor",
+    "file": "heritage-harbor.jpg",
+    "w": 600,
+    "h": 470,
+    "ratio": "1.28:1",
+    "kb": 48,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/kfc-tower-sq.jpg",
+    "name": "Kfc tower sq",
+    "file": "kfc-tower-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 70,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/kfc-tower.jpg",
+    "name": "Kfc tower",
+    "file": "kfc-tower.jpg",
+    "w": 640,
+    "h": 960,
+    "ratio": "2:3",
+    "kb": 113,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/union-station-alt.jpg",
+    "name": "Union station alt",
+    "file": "union-station-alt.jpg",
+    "w": 700,
+    "h": 467,
+    "ratio": "3:2",
+    "kb": 46,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/union-station-sq.jpg",
+    "name": "Union station sq",
+    "file": "union-station-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 69,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/union-station-wide.jpg",
+    "name": "Union station wide",
+    "file": "union-station-wide.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 131,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/union-station.jpg",
+    "name": "Union station",
+    "file": "union-station.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 167,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/us-board-1.jpg",
+    "name": "Us board 1",
+    "file": "us-board-1.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 114,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/us-board-2.jpg",
+    "name": "Us board 2",
+    "file": "us-board-2.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 129,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/vre-axonometric.jpg",
+    "name": "Vre axonometric",
+    "file": "vre-axonometric.jpg",
+    "w": 1109,
+    "h": 844,
+    "ratio": "4:3",
+    "kb": 121,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/vre-section.jpg",
+    "name": "Vre section",
+    "file": "vre-section.jpg",
+    "w": 512,
+    "h": 388,
+    "ratio": "4:3",
+    "kb": 19,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/vre-terminal-sq.jpg",
+    "name": "Vre terminal sq",
+    "file": "vre-terminal-sq.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 47,
+    "group": "civic"
+   },
+   {
+    "src": "../assets/civic/vre-terminal.jpg",
+    "name": "Vre terminal",
+    "file": "vre-terminal.jpg",
+    "w": 1172,
+    "h": 766,
+    "ratio": "3:2",
+    "kb": 88,
+    "group": "civic"
+   }
+  ]
+ },
+ {
+  "id": "images",
+  "title": "Project Archive",
+  "sub": "Catonsville and earlier work",
+  "images": [
+   {
+    "src": "../assets/images/catonsville-01-before.jpg",
+    "name": "Catonsville 01 before",
+    "file": "catonsville-01-before.jpg",
+    "w": 1200,
+    "h": 675,
+    "ratio": "16:9",
+    "kb": 158,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-02-rendering.jpg",
+    "name": "Catonsville 02 rendering",
+    "file": "catonsville-02-rendering.jpg",
+    "w": 1200,
+    "h": 675,
+    "ratio": "16:9",
+    "kb": 139,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-03-completed.jpg",
+    "name": "Catonsville 03 completed",
+    "file": "catonsville-03-completed.jpg",
+    "w": 1200,
+    "h": 675,
+    "ratio": "16:9",
+    "kb": 227,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-floorplan.jpg",
+    "name": "Catonsville floorplan",
+    "file": "catonsville-floorplan.jpg",
+    "w": 742,
+    "h": 525,
+    "ratio": "1.41:1",
+    "kb": 30,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-hero.jpg",
+    "name": "Catonsville hero",
+    "file": "catonsville-hero.jpg",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 272,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-sheet.jpg",
+    "name": "Catonsville sheet",
+    "file": "catonsville-sheet.jpg",
+    "w": 1000,
+    "h": 1294,
+    "ratio": "3:4",
+    "kb": 274,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/catonsville-wide.jpg",
+    "name": "Catonsville wide",
+    "file": "catonsville-wide.jpg",
+    "w": 1200,
+    "h": 500,
+    "ratio": "12:5",
+    "kb": 162,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/renovation-guide-cover.jpg",
+    "name": "Renovation guide cover",
+    "file": "renovation-guide-cover.jpg",
+    "w": 1200,
+    "h": 927,
+    "ratio": "4:3",
+    "kb": 156,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/work-custom-home.jpg",
+    "name": "Work custom home",
+    "file": "work-custom-home.jpg",
+    "w": 360,
+    "h": 360,
+    "ratio": "1:1",
+    "kb": 31,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/work-dicks-dock.jpg",
+    "name": "Work dicks dock",
+    "file": "work-dicks-dock.jpg",
+    "w": 360,
+    "h": 360,
+    "ratio": "1:1",
+    "kb": 45,
+    "group": "images"
+   },
+   {
+    "src": "../assets/images/work-union-station.jpg",
+    "name": "Work union station",
+    "file": "work-union-station.jpg",
+    "w": 360,
+    "h": 360,
+    "ratio": "1:1",
+    "kb": 28,
+    "group": "images"
+   }
+  ]
+ },
+ {
+  "id": "creative",
+  "title": "Campaign Creative",
+  "sub": "The client's own advert artwork",
+  "images": [
+   {
+    "src": "../assets/creative/band-forty-years.jpg",
+    "name": "Band forty years",
+    "file": "band-forty-years.jpg",
+    "w": 600,
+    "h": 460,
+    "ratio": "4:3",
+    "kb": 88,
+    "group": "creative"
+   },
+   {
+    "src": "../assets/creative/build-custom-home-square.jpg",
+    "name": "Build custom home square",
+    "file": "build-custom-home-square.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 87,
+    "group": "creative"
+   },
+   {
+    "src": "../assets/creative/cta-custom-home.jpg",
+    "name": "Cta custom home",
+    "file": "cta-custom-home.jpg",
+    "w": 600,
+    "h": 420,
+    "ratio": "10:7",
+    "kb": 87,
+    "group": "creative"
+   },
+   {
+    "src": "../assets/creative/designed-once-square.jpg",
+    "name": "Designed once square",
+    "file": "designed-once-square.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 80,
+    "group": "creative"
+   },
+   {
+    "src": "../assets/creative/forty-years-square.jpg",
+    "name": "Forty years square",
+    "file": "forty-years-square.jpg",
+    "w": 600,
+    "h": 600,
+    "ratio": "1:1",
+    "kb": 97,
+    "group": "creative"
+   },
+   {
+    "src": "../assets/creative/hero-designed-once.jpg",
+    "name": "Hero designed once",
+    "file": "hero-designed-once.jpg",
+    "w": 600,
+    "h": 700,
+    "ratio": "6:7",
+    "kb": 96,
+    "group": "creative"
+   }
+  ]
+ },
+ {
+  "id": "graphics",
+  "title": "Diagrams & Charts",
+  "sub": "Custom, brand palette",
+  "images": [
+   {
+    "src": "../assets/graphics/cost-per-sqft.png",
+    "name": "Cost per sqft",
+    "file": "cost-per-sqft.png",
+    "w": 600,
+    "h": 400,
+    "ratio": "3:2",
+    "kb": 51,
+    "group": "graphics"
+   },
+   {
+    "src": "../assets/graphics/design-timeline.png",
+    "name": "Design timeline",
+    "file": "design-timeline.png",
+    "w": 600,
+    "h": 350,
+    "ratio": "12:7",
+    "kb": 44,
+    "group": "graphics"
+   },
+   {
+    "src": "../assets/graphics/setback-diagram.png",
+    "name": "Setback diagram",
+    "file": "setback-diagram.png",
+    "w": 600,
+    "h": 440,
+    "ratio": "15:11",
+    "kb": 45,
+    "group": "graphics"
+   }
+  ]
+ },
+ {
+  "id": "stock",
+  "title": "Process Imagery",
+  "sub": "CC0 / public domain",
+  "images": [
+   {
+    "src": "../assets/stock/drafting-triangle-sq.jpg",
+    "name": "Drafting triangle sq",
+    "file": "drafting-triangle-sq.jpg",
+    "w": 800,
+    "h": 800,
+    "ratio": "1:1",
+    "kb": 83,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/drafting-triangle.jpg",
+    "name": "Drafting triangle",
+    "file": "drafting-triangle.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 97,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/floorplan-dims-43.jpg",
+    "name": "Floorplan dims 43",
+    "file": "floorplan-dims-43.jpg",
+    "w": 1000,
+    "h": 750,
+    "ratio": "4:3",
+    "kb": 101,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/floorplan-dims.jpg",
+    "name": "Floorplan dims",
+    "file": "floorplan-dims.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 91,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/heritage-drawing.jpg",
+    "name": "Heritage drawing",
+    "file": "heritage-drawing.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 115,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/sketch-trace.jpg",
+    "name": "Sketch trace",
+    "file": "sketch-trace.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 59,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/winter-house-tall.jpg",
+    "name": "Winter house tall",
+    "file": "winter-house-tall.jpg",
+    "w": 1000,
+    "h": 750,
+    "ratio": "4:3",
+    "kb": 241,
+    "group": "stock"
+   },
+   {
+    "src": "../assets/stock/winter-house.jpg",
+    "name": "Winter house",
+    "file": "winter-house.jpg",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 235,
+    "group": "stock"
+   }
+  ]
+ },
+ {
+  "id": "placeholders",
+  "title": "Placeholders",
+  "sub": "Still to be shot",
+  "images": [
+   {
+    "src": "../assets/placeholders/e02-hero.png",
+    "name": "E02 hero",
+    "file": "e02-hero.png",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 62,
+    "group": "placeholders"
+   },
+   {
+    "src": "../assets/placeholders/e02-inline-scope.png",
+    "name": "E02 inline scope",
+    "file": "e02-inline-scope.png",
+    "w": 1000,
+    "h": 750,
+    "ratio": "4:3",
+    "kb": 67,
+    "group": "placeholders"
+   },
+   {
+    "src": "../assets/placeholders/e03-interior.png",
+    "name": "E03 interior",
+    "file": "e03-interior.png",
+    "w": 1200,
+    "h": 800,
+    "ratio": "3:2",
+    "kb": 71,
+    "group": "placeholders"
+   },
+   {
+    "src": "../assets/placeholders/e04-portrait.png",
+    "name": "E04 portrait",
+    "file": "e04-portrait.png",
+    "w": 800,
+    "h": 800,
+    "ratio": "1:1",
+    "kb": 82,
+    "group": "placeholders"
+   },
+   {
+    "src": "../assets/placeholders/e04-studio.png",
+    "name": "E04 studio",
+    "file": "e04-studio.png",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 53,
+    "group": "placeholders"
+   },
+   {
+    "src": "../assets/placeholders/generic-hero.png",
+    "name": "Generic hero",
+    "file": "generic-hero.png",
+    "w": 1200,
+    "h": 600,
+    "ratio": "2:1",
+    "kb": 42,
+    "group": "placeholders"
+   }
+  ]
+ },
+ {
+  "id": "brand",
+  "title": "Brand",
+  "sub": "Logo variants",
+  "images": [
+   {
+    "src": "../assets/brand/del-studio-logo-black.png",
+    "name": "Del studio logo black",
+    "file": "del-studio-logo-black.png",
+    "w": 500,
+    "h": 115,
+    "ratio": "4.35:1",
+    "kb": 8,
+    "group": "brand"
+   },
+   {
+    "src": "../assets/brand/del-studio-logo-white.png",
+    "name": "Del studio logo white",
+    "file": "del-studio-logo-white.png",
+    "w": 500,
+    "h": 115,
+    "ratio": "4.35:1",
+    "kb": 8,
+    "group": "brand"
+   }
+  ]
+ }
+]
