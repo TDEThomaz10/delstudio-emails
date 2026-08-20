@@ -78,6 +78,65 @@ from delstudio_email_versions order by created_at desc;
 git add -A && git commit -m "…" && git push      # live in ~60s
 ```
 
+## GoHighLevel
+
+**Use `emails-ghl/`.** Not `emails/`, not `emails-production/`.
+
+### Why assets failed before
+
+Three separate causes, all fixed:
+
+1. **Relative paths.** `emails/` uses `../assets/…` so the local preview works. Nothing
+   relative can resolve inside an email — there is no page for it to be relative to.
+   The preview's **Export** button was also emitting relative paths; it now absolutises.
+2. **Unresolved tokens.** `{{BOOKING_URL}}` and `{{GUIDE_URL}}` were never merge fields —
+   they were slots for real URLs. Left in place, the PDF's `href` was literally the
+   string `{{GUIDE_URL}}`, so the link 404'd. That is why "the PDF doesn't load."
+3. **Wrong merge syntax.** `{{FirstName}}` is not GoHighLevel. GHL uses
+   [`{{contact.first_name}}`](https://help.gohighlevel.com/support/solutions/articles/48001078171-list-of-merge-fields).
+
+### Pasting it in
+
+1. **Marketing → Emails → Templates → New → Blank.**
+2. Drag in a **Code / Custom HTML** element.
+3. Paste the entire file from `emails-ghl/`.
+4. **Do not paste into a rich-text block** — it strips the table layout and the email
+   collapses.
+5. Send yourself a test before saving to a campaign.
+
+### Two things to set
+
+| | |
+|---|---|
+| **Unsubscribe** | The build writes `{{unsubscribe_link}}`. Confirm it against GHL's own merge-field picker — their docs point you at the picker rather than publishing the token, so verify rather than trust it. |
+| **Booking link** | Currently points at `delstudioarchitects.com/contact/`. Swap in the Calendly URL in `build-ghl.py` (`BOOKING_URL`) and re-run. |
+
+```bash
+python3 build-ghl.py     # after any edit to emails/ or to the config block
+```
+
+### From the preview
+
+The **GHL ready** toggle in the toolbar is on by default. With it on, **Export** and the
+**Download** button on any saved version both hand you a GoHighLevel-ready file —
+absolute asset URLs, tokens resolved. Turn it off to keep `{{TOKENS}}` for a different
+ESP.
+
+### Image weight
+
+Images were being served at up to 5× their display size. Right-sized to roughly 2×
+(retina) for the slot each one occupies:
+
+| | was | now |
+|---|---|---|
+| All twelve emails | 5.2 MB | **4.0 MB** |
+| The Estate (13 images) | 1.9 MB | **1.3 MB** |
+| Inside (9 images) | 870 KB | **622 KB** |
+
+The two gallery emails are still the heavy ones by nature. If you want them lighter,
+drop a frame or two rather than compressing further — quality is already at the useful
+floor. HTML is 12–26 KB per email, well under Gmail's ~102 KB clipping threshold.
+
 ### emails/ vs emails-production/
 
 `emails/` uses relative paths (`../assets/…`) so the local preview works.
