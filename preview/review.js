@@ -84,3 +84,27 @@ function timeAgo(iso) {
   if (s < 604800) return `${Math.floor(s/86400)}d ago`;
   return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
+
+/* ── GoHighLevel output ───────────────────────────────────────────────────
+   Relative asset paths cannot resolve inside an email, and {{BOOKING_URL}} /
+   {{GUIDE_URL}} were never merge fields — they are slots for real URLs. Left
+   alone the href is literally "{{GUIDE_URL}}" and the link 404s.            */
+const GHL = {
+  bookingUrl : "https://delstudioarchitects.com/contact/",   // swap for Calendly
+  firstName  : "{{contact.first_name}}",
+  unsubscribe: "{{unsubscribe_link}}",                       // verify in GHL's picker
+  guidePath  : "docs/renovation-process-guide.pdf",
+};
+
+/** Absolutise asset paths; optionally resolve tokens for GoHighLevel. */
+function finalizeHTML(html, assetBase, forGHL) {
+  let out = html.split("../assets/").join(assetBase);
+  if (forGHL) {
+    out = out
+      .split("{{FirstName}}").join(GHL.firstName)
+      .split("{{BOOKING_URL}}").join(GHL.bookingUrl)
+      .split("{{GUIDE_URL}}").join(assetBase + GHL.guidePath)
+      .split("{{UnsubscribeURL}}").join(GHL.unsubscribe);
+  }
+  return out;
+}

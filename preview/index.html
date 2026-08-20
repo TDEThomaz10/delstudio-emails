@@ -232,6 +232,7 @@
       <span class="stat" id="stat"></span>
       <button class="tgl" id="pickBtn">Images</button>
       <button class="tgl" id="presentBtn">Present</button>
+      <button class="tgl on" id="ghlBtn" title="Resolve tokens and asset URLs for GoHighLevel">GHL ready</button>
       <button class="tgl" id="saveBtn">Save version</button>
       <button class="tgl" id="expBtn">Export</button>
     </div>
@@ -436,7 +437,7 @@ const app = $("#app"), fr = $("#fr"), frameWrap = $("#frameWrap"),
 let idx=0, width=700, zoomMode="1", contentH=900, merge=true, iso=false;
 let ro=null, LIB=[], filter="all", slots=[], slotSel=-1, editing=false;
 let tab="images", secs=[], secSel=-1, secFilter="all";
-let versions=[], verOnlyThis=false, dlgStatus="saved";
+let versions=[], verOnlyThis=false, dlgStatus="saved", ghlMode=true;
 const raw={}, pristine={}, swaps={};    // swaps[file][slotIndex] = newSrc
 
 /* ── layout ─────────────────────────────────────────── */
@@ -678,12 +679,11 @@ async function downloadVersion(v){
     const row=await getVersionHTML(v.id);
     // relative paths are right for the preview; a download is bound for an ESP,
     // so resolve ../assets/ against wherever this preview is hosted
-    const base=new URL("../assets/",location.href).href;
-    const html=row.html.split("../assets/").join(base);
+    const html=finalizeHTML(row.html, new URL("../assets/",location.href).href, ghlMode);
     const safe=(v.author||"version").replace(/[^a-z0-9]+/gi,"-").toLowerCase();
     const a=document.createElement("a");
     a.href=URL.createObjectURL(new Blob([html],{type:"text/html"}));
-    a.download=v.email_file.replace(/\.html$/,"")+`--${safe}.html`;
+    a.download=v.email_file.replace(/\.html$/,"")+`--${safe}${ghlMode?"-ghl":""}.html`;
     a.click(); URL.revokeObjectURL(a.href);
     toast("Downloaded.");
   }catch(err){ toast(String(err.message||err).slice(0,90)); }
@@ -854,6 +854,9 @@ $("#closePick").onclick=()=>togglePicker(false);
 $("#presentBtn").onclick=()=>setPresent(true);
 $("#exitPresent").onclick=()=>setPresent(false);
 $("#expBtn").onclick=exportHTML;
+$("#ghlBtn").onclick=e=>{ ghlMode=!ghlMode; e.target.classList.toggle("on",ghlMode);
+  toast(ghlMode ? "Downloads will be GoHighLevel-ready."
+                : "Downloads keep {{TOKENS}} for another ESP."); };
 $("#saveBtn").onclick=openSaveDialog;
 $("#dlgCancel").onclick=closeDialog;
 $("#dlgSave").onclick=doSave;
@@ -929,6 +932,7 @@ function exportHTML(){
   html=html.replace(/(<img\b[^>]*?\ssrc=")([^"]*)(")/gi,(m,a,src,c)=>{
     k++; return s[k] ? a+s[k]+c : m;
   });
+  html=finalizeHTML(html, new URL("../assets/",location.href).href, ghlMode);
   const blob=new Blob([html],{type:"text/html"});
   const a=document.createElement("a");
   a.href=URL.createObjectURL(blob); a.download=e.f; a.click();

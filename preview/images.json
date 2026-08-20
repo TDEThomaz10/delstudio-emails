@@ -8,10 +8,10 @@
     "src": "../assets/estate/aerial-sq.jpg",
     "name": "Aerial sq",
     "file": "aerial-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 128,
+    "kb": 83,
     "group": "estate"
    },
    {
@@ -21,27 +21,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 264,
+    "kb": 250,
     "group": "estate"
    },
    {
     "src": "../assets/estate/aerial.jpg",
     "name": "Aerial",
     "file": "aerial.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 338,
+    "kb": 210,
     "group": "estate"
    },
    {
     "src": "../assets/estate/barn-elevation-sq.jpg",
     "name": "Barn elevation sq",
     "file": "barn-elevation-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 122,
+    "kb": 80,
     "group": "estate"
    },
    {
@@ -51,27 +51,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 265,
+    "kb": 251,
     "group": "estate"
    },
    {
     "src": "../assets/estate/barn-elevation.jpg",
     "name": "Barn elevation",
     "file": "barn-elevation.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 330,
+    "kb": 206,
     "group": "estate"
    },
    {
     "src": "../assets/estate/barn-sq.jpg",
     "name": "Barn sq",
     "file": "barn-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 84,
+    "kb": 55,
     "group": "estate"
    },
    {
@@ -81,27 +81,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 170,
+    "kb": 161,
     "group": "estate"
    },
    {
     "src": "../assets/estate/barn.jpg",
     "name": "Barn",
     "file": "barn.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 217,
+    "kb": 136,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage-pool-sq.jpg",
     "name": "Cottage pool sq",
     "file": "cottage-pool-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 116,
+    "kb": 76,
     "group": "estate"
    },
    {
@@ -111,37 +111,37 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 254,
+    "kb": 239,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage-pool.jpg",
     "name": "Cottage pool",
     "file": "cottage-pool.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 309,
+    "kb": 192,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage-sq.jpg",
     "name": "Cottage sq",
     "file": "cottage-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 150,
+    "kb": 98,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage-water-sq.jpg",
     "name": "Cottage water sq",
     "file": "cottage-water-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 129,
+    "kb": 84,
     "group": "estate"
    },
    {
@@ -151,17 +151,17 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 272,
+    "kb": 257,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage-water.jpg",
     "name": "Cottage water",
     "file": "cottage-water.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 358,
+    "kb": 220,
     "group": "estate"
    },
    {
@@ -171,27 +171,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 318,
+    "kb": 300,
     "group": "estate"
    },
    {
     "src": "../assets/estate/cottage.jpg",
     "name": "Cottage",
     "file": "cottage.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 410,
+    "kb": 255,
     "group": "estate"
    },
    {
     "src": "../assets/estate/house-and-barn-sq.jpg",
     "name": "House and barn sq",
     "file": "house-and-barn-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 108,
+    "kb": 70,
     "group": "estate"
    },
    {
@@ -201,27 +201,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 239,
+    "kb": 226,
     "group": "estate"
    },
    {
     "src": "../assets/estate/house-and-barn.jpg",
     "name": "House and barn",
     "file": "house-and-barn.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 299,
+    "kb": 185,
     "group": "estate"
    },
    {
     "src": "../assets/estate/interior-arch-sq.jpg",
     "name": "Interior arch sq",
     "file": "interior-arch-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 37,
+    "kb": 27,
     "group": "estate"
    },
    {
@@ -231,17 +231,17 @@
     "w": 600,
     "h": 800,
     "ratio": "3:4",
-    "kb": 47,
+    "kb": 45,
     "group": "estate"
    },
    {
     "src": "../assets/estate/main-house-sq.jpg",
     "name": "Main house sq",
     "file": "main-house-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 112,
+    "kb": 73,
     "group": "estate"
    },
    {
@@ -251,27 +251,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 260,
+    "kb": 246,
     "group": "estate"
    },
    {
     "src": "../assets/estate/main-house.jpg",
     "name": "Main house",
     "file": "main-house.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 331,
+    "kb": 204,
     "group": "estate"
    },
    {
     "src": "../assets/estate/port-cochere-sq.jpg",
     "name": "Port cochere sq",
     "file": "port-cochere-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 114,
+    "kb": 75,
     "group": "estate"
    },
    {
@@ -281,37 +281,37 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 230,
+    "kb": 218,
     "group": "estate"
    },
    {
     "src": "../assets/estate/port-cochere.jpg",
     "name": "Port cochere",
     "file": "port-cochere.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 301,
+    "kb": 189,
     "group": "estate"
    },
    {
     "src": "../assets/estate/site-panorama-tall.jpg",
     "name": "Site panorama tall",
     "file": "site-panorama-tall.jpg",
-    "w": 1200,
-    "h": 480,
+    "w": 1000,
+    "h": 400,
     "ratio": "5:2",
-    "kb": 128,
+    "kb": 79,
     "group": "estate"
    },
    {
     "src": "../assets/estate/site-panorama.jpg",
     "name": "Site panorama",
     "file": "site-panorama.jpg",
-    "w": 1200,
-    "h": 300,
+    "w": 1000,
+    "h": 250,
     "ratio": "4:1",
-    "kb": 88,
+    "kb": 55,
     "group": "estate"
    }
   ]
@@ -325,10 +325,10 @@
     "src": "../assets/interiors/barn-arch-sq.jpg",
     "name": "Barn arch sq",
     "file": "barn-arch-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 87,
+    "kb": 57,
     "group": "interiors"
    },
    {
@@ -338,27 +338,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 177,
+    "kb": 167,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/barn-arch.jpg",
     "name": "Barn arch",
     "file": "barn-arch.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 227,
+    "kb": 142,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/barn-balcony-sq.jpg",
     "name": "Barn balcony sq",
     "file": "barn-balcony-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 91,
+    "kb": 60,
     "group": "interiors"
    },
    {
@@ -368,27 +368,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 168,
+    "kb": 159,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/barn-balcony.jpg",
     "name": "Barn balcony",
     "file": "barn-balcony.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 234,
+    "kb": 148,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/barn-interior-sq.jpg",
     "name": "Barn interior sq",
     "file": "barn-interior-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 98,
+    "kb": 66,
     "group": "interiors"
    },
    {
@@ -398,27 +398,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 176,
+    "kb": 167,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/barn-interior.jpg",
     "name": "Barn interior",
     "file": "barn-interior.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 238,
+    "kb": 151,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/bedroom-sq.jpg",
     "name": "Bedroom sq",
     "file": "bedroom-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 77,
+    "kb": 51,
     "group": "interiors"
    },
    {
@@ -428,27 +428,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 167,
+    "kb": 159,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/bedroom.jpg",
     "name": "Bedroom",
     "file": "bedroom.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 209,
+    "kb": 131,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-bedroom-sq.jpg",
     "name": "Cottage bedroom sq",
     "file": "cottage-bedroom-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 84,
+    "kb": 55,
     "group": "interiors"
    },
    {
@@ -458,27 +458,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 166,
+    "kb": 157,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-bedroom.jpg",
     "name": "Cottage bedroom",
     "file": "cottage-bedroom.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 218,
+    "kb": 135,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-interior-sq.jpg",
     "name": "Cottage interior sq",
     "file": "cottage-interior-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 76,
+    "kb": 51,
     "group": "interiors"
    },
    {
@@ -488,27 +488,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 148,
+    "kb": 140,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-interior.jpg",
     "name": "Cottage interior",
     "file": "cottage-interior.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 198,
+    "kb": 127,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-living-sq.jpg",
     "name": "Cottage living sq",
     "file": "cottage-living-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 93,
+    "kb": 61,
     "group": "interiors"
    },
    {
@@ -518,27 +518,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 191,
+    "kb": 181,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/cottage-living.jpg",
     "name": "Cottage living",
     "file": "cottage-living.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 249,
+    "kb": 157,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/dining-room-sq.jpg",
     "name": "Dining room sq",
     "file": "dining-room-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 86,
+    "kb": 57,
     "group": "interiors"
    },
    {
@@ -548,27 +548,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 151,
+    "kb": 143,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/dining-room.jpg",
     "name": "Dining room",
     "file": "dining-room.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 205,
+    "kb": 130,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/gazebo-sq.jpg",
     "name": "Gazebo sq",
     "file": "gazebo-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 92,
+    "kb": 64,
     "group": "interiors"
    },
    {
@@ -578,27 +578,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 160,
+    "kb": 152,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/gazebo.jpg",
     "name": "Gazebo",
     "file": "gazebo.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 222,
+    "kb": 147,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/kitchen-arch-sq.jpg",
     "name": "Kitchen arch sq",
     "file": "kitchen-arch-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 59,
+    "kb": 41,
     "group": "interiors"
    },
    {
@@ -608,27 +608,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 99,
+    "kb": 94,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/kitchen-arch.jpg",
     "name": "Kitchen arch",
     "file": "kitchen-arch.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 131,
+    "kb": 86,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/kitchen-sq.jpg",
     "name": "Kitchen sq",
     "file": "kitchen-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 88,
+    "kb": 59,
     "group": "interiors"
    },
    {
@@ -638,27 +638,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 153,
+    "kb": 146,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/kitchen.jpg",
     "name": "Kitchen",
     "file": "kitchen.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 205,
+    "kb": 132,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library-ceiling-sq.jpg",
     "name": "Library ceiling sq",
     "file": "library-ceiling-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 73,
+    "kb": 49,
     "group": "interiors"
    },
    {
@@ -668,37 +668,37 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 147,
+    "kb": 139,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library-ceiling.jpg",
     "name": "Library ceiling",
     "file": "library-ceiling.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 188,
+    "kb": 116,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library-sq.jpg",
     "name": "Library sq",
     "file": "library-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 105,
+    "kb": 70,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library-upper-sq.jpg",
     "name": "Library upper sq",
     "file": "library-upper-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 105,
+    "kb": 70,
     "group": "interiors"
    },
    {
@@ -708,17 +708,17 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 204,
+    "kb": 193,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library-upper.jpg",
     "name": "Library upper",
     "file": "library-upper.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 264,
+    "kb": 167,
     "group": "interiors"
    },
    {
@@ -728,27 +728,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 190,
+    "kb": 180,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/library.jpg",
     "name": "Library",
     "file": "library.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 254,
+    "kb": 160,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/sitting-room-sq.jpg",
     "name": "Sitting room sq",
     "file": "sitting-room-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 73,
+    "kb": 49,
     "group": "interiors"
    },
    {
@@ -758,27 +758,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 151,
+    "kb": 143,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/sitting-room.jpg",
     "name": "Sitting room",
     "file": "sitting-room.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 195,
+    "kb": 124,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/sun-room-sq.jpg",
     "name": "Sun room sq",
     "file": "sun-room-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 97,
+    "kb": 65,
     "group": "interiors"
    },
    {
@@ -788,17 +788,17 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 195,
+    "kb": 185,
     "group": "interiors"
    },
    {
     "src": "../assets/interiors/sun-room.jpg",
     "name": "Sun room",
     "file": "sun-room.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 252,
+    "kb": 160,
     "group": "interiors"
    }
   ]
@@ -815,7 +815,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 31,
+    "kb": 29,
     "group": "habeck"
    },
    {
@@ -825,7 +825,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 47,
+    "kb": 44,
     "group": "habeck"
    },
    {
@@ -835,7 +835,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 30,
+    "kb": 28,
     "group": "habeck"
    },
    {
@@ -845,7 +845,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 49,
+    "kb": 46,
     "group": "habeck"
    },
    {
@@ -855,7 +855,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 31,
+    "kb": 30,
     "group": "habeck"
    },
    {
@@ -865,7 +865,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 46,
+    "kb": 44,
     "group": "habeck"
    },
    {
@@ -875,7 +875,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 30,
+    "kb": 29,
     "group": "habeck"
    },
    {
@@ -885,7 +885,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 46,
+    "kb": 43,
     "group": "habeck"
    },
    {
@@ -895,7 +895,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 29,
+    "kb": 27,
     "group": "habeck"
    },
    {
@@ -905,7 +905,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 46,
+    "kb": 43,
     "group": "habeck"
    },
    {
@@ -915,7 +915,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 29,
+    "kb": 27,
     "group": "habeck"
    },
    {
@@ -925,7 +925,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 44,
+    "kb": 41,
     "group": "habeck"
    },
    {
@@ -935,7 +935,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 32,
+    "kb": 30,
     "group": "habeck"
    },
    {
@@ -945,7 +945,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 51,
+    "kb": 48,
     "group": "habeck"
    },
    {
@@ -955,7 +955,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 35,
+    "kb": 33,
     "group": "habeck"
    },
    {
@@ -965,7 +965,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 49,
+    "kb": 46,
     "group": "habeck"
    },
    {
@@ -975,7 +975,7 @@
     "w": 420,
     "h": 420,
     "ratio": "1:1",
-    "kb": 32,
+    "kb": 30,
     "group": "habeck"
    },
    {
@@ -985,7 +985,7 @@
     "w": 640,
     "h": 427,
     "ratio": "3:2",
-    "kb": 46,
+    "kb": 43,
     "group": "habeck"
    }
   ]
@@ -1002,37 +1002,37 @@
     "w": 300,
     "h": 237,
     "ratio": "1.27:1",
-    "kb": 21,
+    "kb": 20,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/casino-2-sq.jpg",
     "name": "Casino 2 sq",
     "file": "casino-2-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 63,
+    "kb": 44,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/casino-2.jpg",
     "name": "Casino 2",
     "file": "casino-2.jpg",
-    "w": 1200,
-    "h": 750,
+    "w": 1000,
+    "h": 625,
     "ratio": "8:5",
-    "kb": 156,
+    "kb": 100,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/casino-sq.jpg",
     "name": "Casino sq",
     "file": "casino-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 50,
+    "kb": 34,
     "group": "commercial"
    },
    {
@@ -1042,27 +1042,27 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 101,
+    "kb": 96,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/casino.jpg",
     "name": "Casino",
     "file": "casino.jpg",
-    "w": 1200,
-    "h": 750,
+    "w": 1000,
+    "h": 625,
     "ratio": "8:5",
-    "kb": 133,
+    "kb": 84,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/dicks-harbor-sq.jpg",
     "name": "Dicks harbor sq",
     "file": "dicks-harbor-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 108,
+    "kb": 76,
     "group": "commercial"
    },
    {
@@ -1072,17 +1072,17 @@
     "w": 1200,
     "h": 565,
     "ratio": "2.12:1",
-    "kb": 184,
+    "kb": 174,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/dicks-last-resort-sq.jpg",
     "name": "Dicks last resort sq",
     "file": "dicks-last-resort-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 91,
+    "kb": 65,
     "group": "commercial"
    },
    {
@@ -1092,7 +1092,7 @@
     "w": 720,
     "h": 720,
     "ratio": "1:1",
-    "kb": 96,
+    "kb": 93,
     "group": "commercial"
    },
    {
@@ -1102,7 +1102,7 @@
     "w": 1200,
     "h": 530,
     "ratio": "2.26:1",
-    "kb": 183,
+    "kb": 173,
     "group": "commercial"
    },
    {
@@ -1112,17 +1112,17 @@
     "w": 960,
     "h": 725,
     "ratio": "4:3",
-    "kb": 52,
+    "kb": 51,
     "group": "commercial"
    },
    {
     "src": "../assets/commercial/tiaa-cref-sq.jpg",
     "name": "Tiaa cref sq",
     "file": "tiaa-cref-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 35,
+    "kb": 25,
     "group": "commercial"
    },
    {
@@ -1132,7 +1132,7 @@
     "w": 960,
     "h": 725,
     "ratio": "4:3",
-    "kb": 59,
+    "kb": 57,
     "group": "commercial"
    }
   ]
@@ -1149,7 +1149,7 @@
     "w": 600,
     "h": 470,
     "ratio": "1.28:1",
-    "kb": 80,
+    "kb": 75,
     "group": "civic"
    },
    {
@@ -1159,17 +1159,17 @@
     "w": 600,
     "h": 470,
     "ratio": "1.28:1",
-    "kb": 48,
+    "kb": 45,
     "group": "civic"
    },
    {
     "src": "../assets/civic/kfc-tower-sq.jpg",
     "name": "Kfc tower sq",
     "file": "kfc-tower-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 70,
+    "kb": 48,
     "group": "civic"
    },
    {
@@ -1179,7 +1179,7 @@
     "w": 640,
     "h": 960,
     "ratio": "2:3",
-    "kb": 113,
+    "kb": 107,
     "group": "civic"
    },
    {
@@ -1189,17 +1189,17 @@
     "w": 700,
     "h": 467,
     "ratio": "3:2",
-    "kb": 46,
+    "kb": 43,
     "group": "civic"
    },
    {
     "src": "../assets/civic/union-station-sq.jpg",
     "name": "Union station sq",
     "file": "union-station-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 69,
+    "kb": 47,
     "group": "civic"
    },
    {
@@ -1209,47 +1209,47 @@
     "w": 1200,
     "h": 600,
     "ratio": "2:1",
-    "kb": 131,
+    "kb": 124,
     "group": "civic"
    },
    {
     "src": "../assets/civic/union-station.jpg",
     "name": "Union station",
     "file": "union-station.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 167,
+    "kb": 107,
     "group": "civic"
    },
    {
     "src": "../assets/civic/us-board-1.jpg",
     "name": "Us board 1",
     "file": "us-board-1.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 114,
+    "kb": 82,
     "group": "civic"
    },
    {
     "src": "../assets/civic/us-board-2.jpg",
     "name": "Us board 2",
     "file": "us-board-2.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 129,
+    "kb": 89,
     "group": "civic"
    },
    {
     "src": "../assets/civic/vre-axonometric.jpg",
     "name": "Vre axonometric",
     "file": "vre-axonometric.jpg",
-    "w": 1109,
-    "h": 844,
+    "w": 1000,
+    "h": 761,
     "ratio": "4:3",
-    "kb": 121,
+    "kb": 89,
     "group": "civic"
    },
    {
@@ -1259,27 +1259,27 @@
     "w": 512,
     "h": 388,
     "ratio": "4:3",
-    "kb": 19,
+    "kb": 18,
     "group": "civic"
    },
    {
     "src": "../assets/civic/vre-terminal-sq.jpg",
     "name": "Vre terminal sq",
     "file": "vre-terminal-sq.jpg",
-    "w": 600,
-    "h": 600,
+    "w": 520,
+    "h": 520,
     "ratio": "1:1",
-    "kb": 47,
+    "kb": 32,
     "group": "civic"
    },
    {
     "src": "../assets/civic/vre-terminal.jpg",
     "name": "Vre terminal",
     "file": "vre-terminal.jpg",
-    "w": 1172,
-    "h": 766,
+    "w": 1000,
+    "h": 654,
     "ratio": "3:2",
-    "kb": 88,
+    "kb": 82,
     "group": "civic"
    }
   ]
@@ -1293,30 +1293,30 @@
     "src": "../assets/images/catonsville-01-before.jpg",
     "name": "Catonsville 01 before",
     "file": "catonsville-01-before.jpg",
-    "w": 1200,
-    "h": 675,
+    "w": 1000,
+    "h": 562,
     "ratio": "16:9",
-    "kb": 158,
+    "kb": 104,
     "group": "images"
    },
    {
     "src": "../assets/images/catonsville-02-rendering.jpg",
     "name": "Catonsville 02 rendering",
     "file": "catonsville-02-rendering.jpg",
-    "w": 1200,
-    "h": 675,
+    "w": 1000,
+    "h": 562,
     "ratio": "16:9",
-    "kb": 139,
+    "kb": 82,
     "group": "images"
    },
    {
     "src": "../assets/images/catonsville-03-completed.jpg",
     "name": "Catonsville 03 completed",
     "file": "catonsville-03-completed.jpg",
-    "w": 1200,
-    "h": 675,
+    "w": 1000,
+    "h": 562,
     "ratio": "16:9",
-    "kb": 227,
+    "kb": 132,
     "group": "images"
    },
    {
@@ -1326,17 +1326,17 @@
     "w": 742,
     "h": 525,
     "ratio": "1.41:1",
-    "kb": 30,
+    "kb": 25,
     "group": "images"
    },
    {
     "src": "../assets/images/catonsville-hero.jpg",
     "name": "Catonsville hero",
     "file": "catonsville-hero.jpg",
-    "w": 1200,
-    "h": 800,
+    "w": 1000,
+    "h": 667,
     "ratio": "3:2",
-    "kb": 272,
+    "kb": 159,
     "group": "images"
    },
    {
@@ -1346,7 +1346,7 @@
     "w": 1000,
     "h": 1294,
     "ratio": "3:4",
-    "kb": 274,
+    "kb": 232,
     "group": "images"
    },
    {
@@ -1356,17 +1356,17 @@
     "w": 1200,
     "h": 500,
     "ratio": "12:5",
-    "kb": 162,
+    "kb": 143,
     "group": "images"
    },
    {
     "src": "../assets/images/renovation-guide-cover.jpg",
     "name": "Renovation guide cover",
     "file": "renovation-guide-cover.jpg",
-    "w": 1200,
-    "h": 927,
+    "w": 1000,
+    "h": 772,
     "ratio": "4:3",
-    "kb": 156,
+    "kb": 89,
     "group": "images"
    },
    {
@@ -1376,7 +1376,7 @@
     "w": 360,
     "h": 360,
     "ratio": "1:1",
-    "kb": 31,
+    "kb": 28,
     "group": "images"
    },
    {
@@ -1386,7 +1386,7 @@
     "w": 360,
     "h": 360,
     "ratio": "1:1",
-    "kb": 45,
+    "kb": 36,
     "group": "images"
    },
    {
@@ -1396,7 +1396,7 @@
     "w": 360,
     "h": 360,
     "ratio": "1:1",
-    "kb": 28,
+    "kb": 24,
     "group": "images"
    }
   ]
@@ -1413,7 +1413,7 @@
     "w": 600,
     "h": 460,
     "ratio": "4:3",
-    "kb": 88,
+    "kb": 91,
     "group": "creative"
    },
    {
@@ -1423,7 +1423,7 @@
     "w": 600,
     "h": 600,
     "ratio": "1:1",
-    "kb": 87,
+    "kb": 90,
     "group": "creative"
    },
    {
@@ -1443,7 +1443,7 @@
     "w": 600,
     "h": 600,
     "ratio": "1:1",
-    "kb": 80,
+    "kb": 82,
     "group": "creative"
    },
    {
@@ -1453,7 +1453,7 @@
     "w": 600,
     "h": 600,
     "ratio": "1:1",
-    "kb": 97,
+    "kb": 100,
     "group": "creative"
    },
    {
@@ -1463,7 +1463,7 @@
     "w": 600,
     "h": 700,
     "ratio": "6:7",
-    "kb": 96,
+    "kb": 100,
     "group": "creative"
    }
   ]
